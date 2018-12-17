@@ -122,6 +122,7 @@ ln -s $DOTFILES_PATH/config/zsh/zshrc $HOME/.zshrc
 ln -s $DOTFILES_PATH/src/github/robbyrussell/oh-my-zsh $HOME/.oh-my-zsh
 ln -s $DOTFILES_PATH/src/github/SpaceVim/SpaceVim $HOME/.SpaceVim
 ln -s $DOTFILES_PATH/src/github/SpaceVim/SpaceVim $HOME/.vim
+ln -s $DOTFILES_PATH/src/github/SpaceVim/SpaceVim $HOME/.config/nvim
 ln -s $DOTFILES_PATH/config/spacevim/ $HOME/.SpaceVim.d
 
 # Change default shell
