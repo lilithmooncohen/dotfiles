@@ -114,6 +114,8 @@ cd $DOTFILES_PATH/src/github/powerline/fonts
 cd $DOTFILES_PATH
 
 # Create symlinks
+mkdir -p $HOME/.cache/vimfiles/repos/github.com/Shougo
+ln -s $DOTFILES_PATH/src/github/Shougo/dein.vim $HOME/.cache/vimfiles/repos/github.com/Shougo/dein.vim
 ln -s $DOTFILES_PATH/config/tmux $HOME/.tmux
 ln -s $DOTFILES_PATH/config/tmux/tmux.conf $HOME/.tmux.conf
 ln -s $DOTFILES_PATH/config/zsh/zshrc $HOME/.zshrc

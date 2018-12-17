@@ -13,3 +13,6 @@
 [submodule "src/github/SpaceVim/SpaceVim"]
 	path = src/github/SpaceVim/SpaceVim
 	url = https://github.com/SpaceVim/SpaceVim.git
+[submodule "src/github/Shougo/dein.vim"]
+	path = src/github/Shougo/dein.vim
+	url = https://github.com/Shougo/dein.vim.git
