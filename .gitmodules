@@ -1,0 +1,15 @@
+[submodule "src/github/benniemosher/the-one-theme"]
+	path = src/github/benniemosher/the-one-theme
+	url = https://github.com/benniemosher/the-one-theme.git
+[submodule "src/github/powerline/fonts"]
+	path = src/github/powerline/fonts
+	url = https://github.com/powerline/fonts.git
+[submodule "src/github/tmux-plugins/tpm"]
+	path = src/github/tmux-plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
+[submodule "src/github/robbyrussell/oh-my-zsh"]
+	path = src/github/robbyrussell/oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "src/github/SpaceVim/SpaceVim"]
+	path = src/github/SpaceVim/SpaceVim
+	url = https://github.com/SpaceVim/SpaceVim.git
