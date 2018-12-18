@@ -44,9 +44,12 @@ sudo add-apt-repository -y ppa:longsleep/golang-backports
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
+# Add rustup
+curl https://sh.rustup.rs -sSf | sh
+
 sudo apt-get update
 
-# Install dependencies
+# Install kitchen sink
 sudo apt-get install -y \
 	bash \
 	build-essential \
