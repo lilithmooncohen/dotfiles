@@ -24,6 +24,8 @@
     enable_tabline_filetype_icon = false
     enable_statusline_display_mode = false
     enable_vimfiler_gitstatus = true
+    bootstrap_before = "customconfig#before"
+    bootstrap_after = "customconfig#after"
 
 # Enable autocomplete layer
 [[layers]]
@@ -36,8 +38,6 @@ name = 'shell'
 default_position = 'bottom'
 default_height = 15
 
-
-## -- SpaceVim layer list start
 [[layers]]
   name = "VersionControl"
 
@@ -207,4 +207,8 @@ default_height = 15
 [[layers]]
   name = "ui"
 
-## -- SpaceVim layer list end
+# custom plugins
+[[custom_plugins]]
+  name = "hashivim/vim-terraform"
+  merged = 0
+
