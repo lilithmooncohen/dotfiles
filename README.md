@@ -111,11 +111,6 @@ export DOTFILES_PATH="$HOME/.dotfiles"
 # Clone the repo
 git clone --recursive https://github.com/ryanckoch/dotfiles.git $DOTFILES_PATH
 
-# Install needed fonts
-cd $DOTFILES_PATH/src/github/powerline/fonts
-./install.sh
-cd $DOTFILES_PATH
-
 # Create symlinks
 mkdir -p $HOME/.cache/vimfiles/repos/github.com/Shougo
 ln -s $DOTFILES_PATH/src/github/Shougo/dein.vim $HOME/.cache/vimfiles/repos/github.com/Shougo/dein.vim
@@ -132,6 +127,25 @@ ln -s $DOTFILES_PATH/config/spacevim/ $HOME/.SpaceVim.d
 chsh -s /bin/zsh
 ```
 
+### Install fonts
+
+```
+mkdir -p $HOME/.local/share/fonts
+cp $DOTFILES_PATH/src/local/fonts/* $HOME/.local/share/fonts
+```
+
+#### Mac
+```
+cp $HOME/.local/share/fonts/* $HOME/Library/Fonts/
+```
+
+#### Linux
+```
+fc-cache -fv > /dev/null
+mkfontdir "$HOME/.local/share/fonts" > /dev/null
+mkfontscale "$HOME/.local/share/fonts" > /dev/null
+```
+
 ## Update
 To update all submodules, do the following:
 ```
@@ -139,3 +153,4 @@ export DOTFILES_PATH="$HOME/.dotfiles"
 cd $DOTFILES_PATH
 git submodule update --init --recursive
 ```
+
