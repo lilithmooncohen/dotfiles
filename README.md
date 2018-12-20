@@ -46,25 +46,31 @@ sudo add-apt-repository -y ppa:longsleep/golang-backports
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
+# Add microsoft repo
+curl -sSO https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb && \
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+
 sudo apt-get update
 
 # Install kitchen sink
 sudo apt-get install -y \
-	bash \
-	build-essential \
-	ctags \
-	erlang-xmerl \
+  bash \
+  build-essential \
+  ctags \
+  erlang-xmerl \
   git \
-	golang-go \
-	jq \
-	neovim \
-	python-dev \
-	python-pip \
-	python3-dev \
-	python3-pip \
-	ruby \
+  golang-go \
+  jq \
+  neovim \
+  powershell \
+  python-dev \
+  python-pip \
+  python3-dev \
+  python3-pip \
+  ruby \
   tmux \
-	vim-nox \
+  vim-nox \
   yarn \
   zsh
 ```
@@ -74,12 +80,12 @@ sudo apt-get install -y \
 curl https://sh.rustup.rs -sSf | sh -s -- -y
 
 yarn global add \
-	import-js \
-	bash-language-server \
-	dockerfile-language-server-nodejs \
-	javascript-typescript-langserver \
-    neovim \
-    typescript
+  import-js \
+  bash-language-server \
+  dockerfile-language-server-nodejs \
+  javascript-typescript-langserver \
+  neovim \
+  typescript
 
 go get -u github.com/sourcegraph/go-langserver
 
