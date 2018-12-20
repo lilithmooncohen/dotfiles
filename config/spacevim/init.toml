@@ -209,6 +209,10 @@ default_height = 15
 
 # custom plugins
 [[custom_plugins]]
+  name = "pearofducks/ansible-vim"
+  merged = 0
+
+[[custom_plugins]]
   name = "hashivim/vim-terraform"
   merged = 0
 
