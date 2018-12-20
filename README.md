@@ -14,6 +14,7 @@ brew install \
     yarn \
     vim \
     zsh
+brew cask install powershell
 ```
 
 ### Debian / Ubuntu
