@@ -14,6 +14,7 @@ brew install \
     yarn \
     vim \
     zsh
+brew install global --with-pygments --with-ctags
 brew cask install powershell
 ```
 
@@ -60,6 +61,7 @@ sudo apt-get install -y \
   ctags \
   erlang-xmerl \
   git \
+  global \
   golang-go \
   jq \
   neovim \
