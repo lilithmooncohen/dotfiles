@@ -160,6 +160,7 @@ To update all submodules, do the following:
 ```
 export DOTFILES_PATH="$HOME/.dotfiles"
 cd $DOTFILES_PATH
+git pull
 git submodule update --init --recursive
 ```
 
