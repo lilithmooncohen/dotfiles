@@ -1,0 +1,4 @@
+if !exists('g:colors_name') || g:colors_name != 'base16-spacemacs'
+  let base16colorspace=256
+  colorscheme base16-spacemacs
+endif
