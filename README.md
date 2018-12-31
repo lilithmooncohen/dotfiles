@@ -59,6 +59,7 @@ sudo apt-get install -y \
   bash \
   build-essential \
   ctags \
+  emacs-nox \
   erlang-xmerl \
   git \
   global \
@@ -132,6 +133,7 @@ ln -s $DOTFILES_PATH/config/tmux/tmux.conf $HOME/.tmux.conf
 ln -s $DOTFILES_PATH/config/zsh/zshrc $HOME/.zshrc
 ln -s $DOTFILES_PATH/src/github/robbyrussell/oh-my-zsh $HOME/.oh-my-zsh
 ln -s $DOTFILES_PATH/config/spacemacs/.spacemacs $HOME/.spacemacs
+ln -s $DOTFILES_PATH/src/syl20bnr/spacemacs $HOME/.emacs
 ln -s $DOTFILES_PATH/src/github/SpaceVim/SpaceVim $HOME/.SpaceVim
 ln -s $DOTFILES_PATH/src/github/SpaceVim/SpaceVim $HOME/.vim
 ln -s $DOTFILES_PATH/config/base16/vim/.vimrc_background $HOME/.vimrc_background

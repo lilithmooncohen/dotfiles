@@ -13,3 +13,6 @@
 [submodule "src/github/chriskempson/base16-shell"]
 	path = src/github/chriskempson/base16-shell
 	url = https://github.com/chriskempson/base16-shell.git
+[submodule "src/github/syl20bnr/spacemacs"]
+	path = src/github/syl20bnr/spacemacs
+	url = https://github.com/syl20bnr/spacemacs
