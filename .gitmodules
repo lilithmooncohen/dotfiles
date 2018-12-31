@@ -1,6 +1,3 @@
-[submodule "src/github/benniemosher/the-one-theme"]
-	path = src/github/benniemosher/the-one-theme
-	url = https://github.com/benniemosher/the-one-theme.git
 [submodule "src/github/tmux-plugins/tpm"]
 	path = src/github/tmux-plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
