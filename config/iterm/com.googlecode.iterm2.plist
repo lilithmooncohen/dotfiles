@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AllowClipboardAccess</key>
+	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>AppleScrollAnimationEnabled</key>
@@ -1000,7 +1002,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>741 364 814 120 0 0 1920 1057 </string>
+	<string>741 256 814 94 0 0 1920 1057 </string>
 	<key>NSWindow Frame ProfilesPanel</key>
 	<string>342 552 735 382 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -1008,9 +1010,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>500 318 599 430 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>443 663 928 394 0 0 1920 1057 </string>
+	<string>443 543 796 486 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>215 304 1058 711 0 0 1920 1057 </string>
+	<string>0 343 1058 711 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1750,7 +1752,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-12-30T19:47:43Z</date>
+	<date>2018-12-31T19:47:44Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>WordCharacters</key>
