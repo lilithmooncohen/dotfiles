@@ -88,6 +88,7 @@ yarn global add \
   dockerfile-language-server-nodejs \
   javascript-typescript-langserver \
   neovim \
+  tern \
   typescript
 
 go get -u github.com/sourcegraph/go-langserver
