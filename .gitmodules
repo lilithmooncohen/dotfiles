@@ -16,3 +16,6 @@
 [submodule "src/github/syl20bnr/spacemacs"]
 	path = src/github/syl20bnr/spacemacs
 	url = https://github.com/syl20bnr/spacemacs
+[submodule "src/github/Kraust/base16-tmux"]
+	path = src/github/Kraust/base16-tmux
+	url = https://github.com/Kraust/base16-tmux.git
