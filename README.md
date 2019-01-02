@@ -5,7 +5,9 @@ These are my dotfiles for setting up zsh, tmux, and spacevim. I use them to conf
 
 ### Mac
 ```
+brew tap d12frosted/emacs-plus
 brew install \
+    emacs-plugs \
     go \
     neovim \
     python \
@@ -16,6 +18,7 @@ brew install \
     zsh
 brew install global --with-pygments --with-ctags
 brew cask install powershell
+ln -s /usr/local/opt/emacs-plus/Emacs.app /Applications
 ```
 
 ### Debian / Ubuntu
