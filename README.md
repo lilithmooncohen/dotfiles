@@ -5,9 +5,7 @@ These are my dotfiles for setting up zsh, tmux, and spacevim. I use them to conf
 
 ### Mac
 ```
-brew tap d12frosted/emacs-plus
 brew install \
-    emacs-plugs \
     go \
     neovim \
     python \
@@ -18,7 +16,6 @@ brew install \
     zsh
 brew install global --with-pygments --with-ctags
 brew cask install powershell
-ln -s /usr/local/opt/emacs-plus/Emacs.app /Applications
 ```
 
 ### Debian / Ubuntu
@@ -62,7 +59,6 @@ sudo apt-get install -y \
   bash \
   build-essential \
   ctags \
-  emacs-nox \
   erlang-xmerl \
   git \
   global \
@@ -91,7 +87,6 @@ yarn global add \
   dockerfile-language-server-nodejs \
   javascript-typescript-langserver \
   neovim \
-  tern \
   typescript
 
 go get -u github.com/sourcegraph/go-langserver
@@ -110,7 +105,6 @@ pip3 install \
 .dotfiles/
 .oh_my_zsh/
 .profile
-.spacemacs
 .SpaceVim/
 .SpaceVim.d/
 .tmux/
@@ -136,8 +130,6 @@ ln -s $DOTFILES_PATH/config/tmux $HOME/.tmux
 ln -s $DOTFILES_PATH/config/tmux/tmux.conf $HOME/.tmux.conf
 ln -s $DOTFILES_PATH/config/zsh/zshrc $HOME/.zshrc
 ln -s $DOTFILES_PATH/src/github/robbyrussell/oh-my-zsh $HOME/.oh-my-zsh
-ln -s $DOTFILES_PATH/config/spacemacs/.spacemacs $HOME/.spacemacs
-ln -s $DOTFILES_PATH/src/github/syl20bnr/spacemacs $HOME/.emacs.d
 ln -s $DOTFILES_PATH/src/github/SpaceVim/SpaceVim $HOME/.SpaceVim
 ln -s $DOTFILES_PATH/src/github/SpaceVim/SpaceVim $HOME/.vim
 ln -s $DOTFILES_PATH/config/base16/vim/.vimrc_background $HOME/.vimrc_background
