@@ -1,0 +1,2 @@
+[[ -s "$HOME/.zshenv" ]] && source "$HOME/.zshenv"
+[[ -s "$HOME/.zprofile" ]] && source "$HOME/.zprofile"

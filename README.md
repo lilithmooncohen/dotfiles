@@ -16,6 +16,7 @@ brew install \
     zsh
 brew install global --with-pygments --with-ctags
 brew cask install powershell
+sudo sh -c "echo $(which zsh) >> /etc/shells"
 ```
 
 ### Debian / Ubuntu
@@ -105,6 +106,10 @@ pip3 install \
 .dotfiles/
 .oh_my_zsh/
 .profile
+.zshenv
+.zprofile
+.bash_profile
+.bashrc
 .SpaceVim/
 .SpaceVim.d/
 .tmux/
@@ -127,10 +132,14 @@ mkdir -p $HOME/.config
 mkdir -p $HOME/.cache/vimfiles/repos/github.com/Shougo
 mkdir -p $HOME/Library/Application\ Support/Code/User
 ln -s $DOTFILES_PATH/src/github/Shougo/dein.vim $HOME/.cache/vimfiles/repos/github.com/Shougo/dein.vim
-ln -s $DOTFILES_PATH/config/.profile $HOME/.profile
 ln -s $DOTFILES_PATH/config/tmux $HOME/.tmux
 ln -s $DOTFILES_PATH/config/tmux/tmux.conf $HOME/.tmux.conf
+ln -s $DOTFILES_PATH/config/zsh/zshenv $HOME/.zshenv
+ln -s $DOTFILES_PATH/config/zsh/zprofile $HOME/.zprofile
 ln -s $DOTFILES_PATH/config/zsh/zshrc $HOME/.zshrc
+ln -s $DOTFILES_PATH/config/zsh/zshrc $HOME/.zshrc
+ln -s $DOTFILES_PATH/config/bash/bash_profile $HOME/.bash_profile
+ln -s $DOTFILES_PATH/config/bash/bashrc $HOME/.bashrc
 ln -s $DOTFILES_PATH/src/github/robbyrussell/oh-my-zsh $HOME/.oh-my-zsh
 ln -s $DOTFILES_PATH/src/github/SpaceVim/SpaceVim $HOME/.SpaceVim
 ln -s $DOTFILES_PATH/src/github/SpaceVim/SpaceVim $HOME/.vim
@@ -142,7 +151,7 @@ ln -s $DOTFILES_PATH/config/vscode/keybindings.json $HOME/Library/Application\ S
 ln -s $DOTFILES_PATH/config/vscode/snippets $HOME/Library/Application\ Support/Code/User/
 
 # Change default shell
-chsh -s /bin/zsh
+chsh -s $(which zsh)
 ```
 
 ### Install fonts
