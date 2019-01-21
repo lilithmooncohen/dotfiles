@@ -11,7 +11,7 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    colorscheme = "space-vim-dark"
+    colorscheme = "dracula"
     colorscheme_bg = "dark"
     background = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
@@ -28,15 +28,15 @@
     bootstrap_before = "customconfig#before"
     bootstrap_after = "customconfig#after"
     custom_color_palette = [
-      ["#282828" , "#FFA500" , 250, 97],
-      ["#d75fd7" , "#4e4e4e" , 170 , 239],
-      ["#c6c6c6" , "#3a3a3a" , 251 , 237],
-      ["#2c323c", 16],
-      ["#282828", "#00BFFF", 114, 152],
-      ["#2c323c", "#ff8787", 114, 210],
-      ["#2c323c", "#d75f5f", 114, 167],
-      ["#282828", "#689d6a", 235, 72],
-      ["#282828", "#8f3f71", 235, 132],
+      ['#2c323c', '#98c379', 114, 16],
+      ['#abb2bf', '#3b4048', 16, 145],
+      ['#abb2bf', '#2c323c', 16, 145],
+      ['#2c323c', 16],
+      ['#2c323c', '#afd7d7', 114, 152],
+      ['#2c323c', '#ff8787', 114, 210],
+      ['#2c323c', '#d75f5f', 114, 167],
+      ['#2c323c', '#689d6a', 114, 72],
+      ['#2c323c', '#8f3f71', 114, 132],
     ]
 
 # Enable autocomplete layer
@@ -221,8 +221,7 @@ default_height = 15
 
 [[layers]]
   name = "ui"
-
 [[custom_plugins]]
-  name = "liuchengxu/space-vim-dark"
+  name = "dracula/vim"
   merged = 0
 
