@@ -137,7 +137,6 @@ ln -s $DOTFILES_PATH/config/tmux/tmux.conf $HOME/.tmux.conf
 ln -s $DOTFILES_PATH/config/zsh/zshenv $HOME/.zshenv
 ln -s $DOTFILES_PATH/config/zsh/zprofile $HOME/.zprofile
 ln -s $DOTFILES_PATH/config/zsh/zshrc $HOME/.zshrc
-ln -s $DOTFILES_PATH/config/zsh/zshrc $HOME/.zshrc
 ln -s $DOTFILES_PATH/config/bash/bash_profile $HOME/.bash_profile
 ln -s $DOTFILES_PATH/config/bash/bashrc $HOME/.bashrc
 ln -s $DOTFILES_PATH/src/github/robbyrussell/oh-my-zsh $HOME/.oh-my-zsh
