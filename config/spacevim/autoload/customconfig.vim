@@ -3,5 +3,5 @@ func! customconfig#before() abort
 endf
 
 func! customconfig#after() abort
-  hi Comment    gui=NONE
+  "let some_config_option = 1
 endf
