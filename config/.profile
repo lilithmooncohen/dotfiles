@@ -1,4 +1,4 @@
-export PATH="$HOME/.cargo/bin:$HOME/go/bin:$HOME/.yarn/bin:$HOME/.local/bin:$PATH"
+export PATH="$HOME/google-cloud-sdk/bin:$HOME/.cargo/bin:$HOME/go/bin:$HOME/.yarn/bin:$HOME/.local/bin:$PATH"
 export TERM="xterm-256color"
 export LANG="en_US.UTF-8"
 export LANGUAGE="en_US:en"
