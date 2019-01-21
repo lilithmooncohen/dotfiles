@@ -1,1 +1,2 @@
-if [ -f "$HOME/google-cloud-sdk/completion.bash.inc" ]; then . "$HOME/google-cloud-sdk/completion.bash.inc"; fi
+[[ -s "$HOME/.zshenv" ]] && source "$HOME/.zshenv"
+[[ -s "$HOME/.zprofile" ]] && source "$HOME/.zprofile"
