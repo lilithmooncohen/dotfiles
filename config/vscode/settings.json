@@ -23,7 +23,7 @@
     "git.autofetch": true,
     "terminal.external.linuxExec": "xterm-256color",
     "terminal.integrated.fontFamily": "FuraCode Nerd Font",
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 15,
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
         {
@@ -1110,7 +1110,7 @@
         }
     ],
     "vim.easymotion": true,
-    "editor.fontSize": 14,
+    "editor.fontSize": 15,
     "editor.fontFamily": "FuraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
     "workbench.colorTheme": "Dracula",
     "workbench.colorCustomizations": {
