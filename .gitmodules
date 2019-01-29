@@ -16,3 +16,6 @@
 [submodule "src/github/Kraust/base16-tmux"]
 	path = src/github/Kraust/base16-tmux
 	url = https://github.com/Kraust/base16-tmux.git
+[submodule "src/github/dracula/base16"]
+	path = src/github/dracula/base16
+	url = https://github.com/dracula/base16.git
