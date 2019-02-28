@@ -322,6 +322,8 @@ before packages are loaded. If you are unsure, you should try in setting them in
   )
 
 (defun dotspacemacs/user-config ()
+  (evil-leader/set-key
+    "q q" 'spacemacs/frame-killer)
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration.
