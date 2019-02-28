@@ -1,8 +1,12 @@
 - hosts: localhost
   tasks:
+    - homebrew_tap:
+        name: "d12frosted/emacs-plus"
+        state: present
     - name: Install Packages
       homebrew:
         name: [
+          "emacs-plus",
           "go",
           "neovim",
           "python",
