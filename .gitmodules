@@ -19,3 +19,6 @@
 [submodule "src/github/dracula/base16"]
 	path = src/github/dracula/base16
 	url = https://github.com/dracula/base16.git
+[submodule "src/github/syl20bnr/spacemacs"]
+	path = src/github/syl20bnr/spacemacs
+	url = https://github.com/syl20bnr/spacemacs.git

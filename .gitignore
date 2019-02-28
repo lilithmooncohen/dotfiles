@@ -19,6 +19,9 @@
 Session.vim
 .netrwhist
 
+# Ansible retry files
+**/*.retry
+
 config/tmux/plugins/*
 config/tmux/plugins/*/
 !config/tmux/plugins/tpm

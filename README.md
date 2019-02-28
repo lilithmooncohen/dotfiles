@@ -1,5 +1,10 @@
 # ryanckoch dotfiles
-These are my dotfiles for setting up zsh, tmux, and spacevim. I use them to configure both my local machine and any jump host or development server that I use.
+These are my dotfiles for setting up my development environment. I use them to configure both my local machine and any jump host or development server that I use.
+
+## Install pip and Ansible
+```
+sudo pip install ansible
+```
 
 ## OS Specific Prep
 
@@ -21,61 +26,7 @@ sudo sh -c "echo $(which zsh) >> /etc/shells"
 
 ### Debian / Ubuntu
 ```
-sudo apt-get install -y \
-	curl \
-	locales \
-	software-properties-common
-
-# Set locale
-sudo locale-gen en_US.UTF-8
-sudo update-locale \
-	LANG="en_US.UTF-8" \
-	LANGUAGE="en_US:en" \
-	LC_NUMERIC="en_US.UTF-8" \
-	LC_TIME="en_US.UTF-8" \
-	LC_MONETARY="en_US.UTF-8" \
-	LC_PAPER="en_US.UTF-8" \
-	LC_IDENTIFICATION="en_US.UTF-8" \
-	LC_NAME="en_US.UTF-8" \
-	LC_ADDRESS="en_US.UTF-8" \
-	LC_TELEPHONE="en_US.UTF-8" \
-	LC_MEASUREMENT="en_US.UTF-8"
-
-# Add go repo
-sudo add-apt-repository -y ppa:longsleep/golang-backports
-
-# Add yarn repo
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-
-# Add microsoft repo
-curl -sSO https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb && \
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-
-sudo apt-get update
-
-# Install kitchen sink
-sudo apt-get install -y \
-  bash \
-  build-essential \
-  ctags \
-  erlang-xmerl \
-  git \
-  global \
-  golang-go \
-  jq \
-  neovim \
-  powershell \
-  python-dev \
-  python-pip \
-  python3-dev \
-  python3-pip \
-  ruby \
-  tmux \
-  vim-nox \
-  yarn \
-  zsh
+ansible-playbook helpers/install/ubuntu.yml --ask-sudo-pass
 ```
 
 ## Install dependencies
@@ -88,6 +39,7 @@ yarn global add \
   dockerfile-language-server-nodejs \
   javascript-typescript-langserver \
   neovim \
+  tern \
   typescript
 
 go get -u github.com/sourcegraph/go-langserver
@@ -104,6 +56,7 @@ pip3 install \
 ### If any of the following exist, back them up and remove them
 ```
 .dotfiles/
+.config/terminator/config
 .oh_my_zsh/
 .profile
 .zshenv
@@ -142,12 +95,18 @@ ln -s $DOTFILES_PATH/config/bash/bashrc $HOME/.bashrc
 ln -s $DOTFILES_PATH/src/github/robbyrussell/oh-my-zsh $HOME/.oh-my-zsh
 ln -s $DOTFILES_PATH/src/github/SpaceVim/SpaceVim $HOME/.SpaceVim
 ln -s $DOTFILES_PATH/src/github/SpaceVim/SpaceVim $HOME/.vim
+ln -s $DOTFILES_PATH/src/github/syl20bnr/spacemacs $HOME/.emacs.d
+ln -s $DOTFILES_PATH/config/spacemacs/.spacemacs $HOME/.spacemacs
 ln -s $DOTFILES_PATH/config/base16/vim/.vimrc_background $HOME/.vimrc_background
 ln -s $DOTFILES_PATH/src/github/SpaceVim/SpaceVim $HOME/.config/nvim
 ln -s $DOTFILES_PATH/config/spacevim/ $HOME/.SpaceVim.d
 ln -s $DOTFILES_PATH/config/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 ln -s $DOTFILES_PATH/config/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
 ln -s $DOTFILES_PATH/config/vscode/snippets $HOME/Library/Application\ Support/Code/User/
+ln -s $DOTFILES_PATH/config/vscode/settings.json $HOME/.config/Code/User/settings.json
+ln -s $DOTFILES_PATH/config/vscode/keybindings.json $HOME/.config/Code/User/keybindings.json
+ln -s $DOTFILES_PATH/config/vscode/snippets $HOME/.config/Code/User/
+ln -s $DOTFILES_PATH/config/terminator/config $HOME/.config/terminator/config
 
 # Change default shell
 chsh -s $(which zsh)

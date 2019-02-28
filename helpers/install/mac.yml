@@ -1,0 +1,15 @@
+- hosts: localhost
+  tasks:
+    - name: Install Packages
+      homebrew:
+        name: [
+          "go",
+          "neovim",
+          "python",
+          "python@2",
+          "tmux",
+          "yarn",
+          "vim",
+          "zsh"
+        ]
+        state: present
