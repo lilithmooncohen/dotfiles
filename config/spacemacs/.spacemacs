@@ -52,7 +52,7 @@ values."
      markdown
      (org :variables
           org-enable-github-support t
-          org-projectile-file "~/Documents/emacs-org-mode/TODO.org")
+          org-projectile-file "~/Documents/org/TODO.org")
      python
      (shell :variables
             shell-default-height 20
