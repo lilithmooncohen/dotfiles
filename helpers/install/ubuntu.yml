@@ -96,6 +96,7 @@
           "inotify-tools",
           "jq",
           "neovim",
+          "nodejs",
           "npm",
           "powershell",
           "python-dev",
@@ -139,22 +140,22 @@
         version: "c3a2756065a0fb04cfd2681280123b362d862a5e"
 
     - name: "Check if mosh configure exists"
-      stat: 
+      stat:
         path: "/opt/src/mosh/configure"
       register: mosh_configure_file
 
     - name: "Check if mosh Makefile exists"
-      stat: 
+      stat:
         path: "/opt/src/mosh/Makefile"
       register: mosh_makefile_file
 
     - name: "Check if mosh VERSION file exists"
-      stat: 
+      stat:
         path: "/opt/src/mosh/VERSION"
       register: mosh_version_file
 
     - name: "Check if mosh binary exists"
-      stat: 
+      stat:
         path: "/usr/local/bin/mosh"
       register: mosh_binary_file
 
@@ -185,4 +186,3 @@
         chdir: "/opt/src/mosh"
       register: mosh_make_install
       when: mosh_make.changed or mosh_binary_file.stat.exists == False
-
