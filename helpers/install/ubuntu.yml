@@ -80,6 +80,16 @@
         repo: "ppa:neovim-ppa/stable"
         state: "present"
 
+    - name: "Add Google Cloud apt key"
+      apt_key:
+        url: "https://packages.cloud.google.com/apt/doc/apt-key.gpg"
+        state: "present"
+
+    - name: "Add Google Cloud apt repo"
+      apt_repository:
+        repo: "deb https://packages.cloud.google.com/apt cloud-sdk-bionic main"
+        state: "present"
+
     - name: "Install the kitchen sink"
       apt:
         name: [
@@ -93,6 +103,7 @@
           "git",
           "global",
           "golang-go",
+          "google-cloud-sdk",
           "inotify-tools",
           "jq",
           "neovim",
