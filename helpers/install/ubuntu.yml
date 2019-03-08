@@ -212,3 +212,15 @@
         extra_opts: [--strip-components=1]
         remote_src: yes
 
+    - name: "Install kubectx"
+      get_url:
+        url: "https://raw.githubusercontent.com/ahmetb/kubectx/master/kubectx"
+        dest: "/usr/local/bin/kubectx"
+        mode: "u=rw,g=rx,o=rx"
+
+    - name: "Install kubens"
+      get_url:
+        url: "https://raw.githubusercontent.com/ahmetb/kubectx/master/kubens"
+        dest: "/usr/local/bin/kubens"
+        mode: "u=rw,g=rx,o=rx"
+
