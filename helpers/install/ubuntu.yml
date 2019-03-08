@@ -106,6 +106,7 @@
           "google-cloud-sdk",
           "inotify-tools",
           "jq",
+          "kubectl",
           "neovim",
           "nodejs",
           "npm",
@@ -203,3 +204,11 @@
         src: "https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip"
         dest: /usr/local/bin
         remote_src: yes
+
+    - name: "Install Helm"
+      unarchive:
+        src: "https://kubernetes-helm.storage.googleapis.com/helm-v2.12.1-linux-amd64.tar.gz"
+        dest: /usr/local/bin
+        extra_opts: [--strip-components=1]
+        remote_src: yes
+
