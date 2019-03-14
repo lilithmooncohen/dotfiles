@@ -137,6 +137,7 @@
           "pkg-config"
         ]
         update_cache: "yes"
+        install_recommends: "yes"
         state: "present"
 
     - name: "Ensure /opt/src directory exists"
