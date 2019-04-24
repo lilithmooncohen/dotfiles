@@ -43,10 +43,14 @@ ansible-playbook helpers/install/ubuntu.yml --ask-sudo-pass
 curl https://sh.rustup.rs -sSf | sh -s -- -y
 
 yarn global add \
-  import-js \
+  babel-eslint \
   bash-language-server \
   dockerfile-language-server-nodejs \
+  eslint \
+  eslint-plugin-react \
+  import-js \
   javascript-typescript-langserver \
+  js-beautify \
   neovim \
   tern \
   typescript

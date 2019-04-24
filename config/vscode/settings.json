@@ -1140,5 +1140,7 @@
     "workbench.statusBar.feedback.visible": false,
     "window.nativeTabs": true,
     "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false
+    "telemetry.enableTelemetry": false,
+    "window.titleBarStyle": "custom",
+    "explorer.confirmDelete": false
 }

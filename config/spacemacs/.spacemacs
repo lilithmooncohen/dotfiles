@@ -53,11 +53,13 @@ values."
      (org :variables
           org-enable-github-support t
           org-projectile-file "~/Documents/org/TODO.org")
+     puppet
      python
      (shell :variables
             shell-default-height 20
             shell-default-position 'bottom)
      ;; spell-checking
+     react
      shell-scripts
      syntax-checking
      terraform

@@ -118,6 +118,7 @@
           "python3-dev",
           "python3-pip",
           "ruby",
+          "shellcheck",
           "tmux",
           "vim-nox",
           "yarn",
@@ -204,7 +205,13 @@
 
     - name: "Install Terraform"
       unarchive:
-        src: "https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip"
+        src: "https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip"
+        dest: /usr/local/bin
+        remote_src: yes
+
+    - name: "Install Vault"
+      unarchive:
+        src: "https://releases.hashicorp.com/vault/1.1.1/vault_1.1.1_linux_amd64.zip"
         dest: /usr/local/bin
         remote_src: yes
 
@@ -213,6 +220,12 @@
         src: "https://kubernetes-helm.storage.googleapis.com/helm-v2.12.1-linux-amd64.tar.gz"
         dest: /usr/local/bin
         extra_opts: [--strip-components=1]
+        remote_src: yes
+
+    - name: "Install Goon"
+      unarchive:
+        src: "https://github.com/alco/goon/releases/download/v1.1.1/goon_linux_amd64.tar.gz"
+        dest: /usr/local/bin
         remote_src: yes
 
     - name: "Install kubectx"
@@ -244,3 +257,9 @@
       apt:
         deb: "/tmp/ansible-downloads-keybase.deb"
         state: "present"
+
+    - name: "Install terraform-docs"
+      get_url:
+        url: "https://github.com/segmentio/terraform-docs/releases/download/v0.6.0/terraform-docs-v0.6.0-linux-amd64"
+        dest: "/usr/local/bin/terraform-docs"
+        mode: "u=rw,g=rx,o=rx"
