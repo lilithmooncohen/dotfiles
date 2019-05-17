@@ -89,7 +89,7 @@ pip3 install \
 mkdir -p $HOME/.config
 mkdir -p $HOME/.cache/vimfiles/repos/github.com/Shougo
 mkdir -p $HOME/.config/Code/User
-mkdir -p $HOME/Library/Application\ Support/Code/User
+mkdir -p $HOME/Library/Application\ Support/Code
 mkdir -p $HOME/.code-server/User
 ln -s $DOTFILES_PATH/src/github/Shougo/dein.vim $HOME/.cache/vimfiles/repos/github.com/Shougo/dein.vim
 ln -s $DOTFILES_PATH/config/tmux $HOME/.tmux
@@ -110,9 +110,7 @@ ln -s $DOTFILES_PATH/config/spacevim/ $HOME/.SpaceVim.d
 ln -s $DOTFILES_PATH/config/vscode/settings.json $HOME/.config/Code/User/settings.json
 ln -s $DOTFILES_PATH/config/vscode/keybindings.json $HOME/.config/Code/User/keybindings.json
 ln -s $DOTFILES_PATH/config/vscode/snippets $HOME/.config/Code/User/
-ln -s $DOTFILES_PATH/config/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
-ln -s $DOTFILES_PATH/config/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
-ln -s $DOTFILES_PATH/config/vscode/snippets $HOME/Library/Application\ Support/Code/User/
+ln -s $HOME/.config/Code/User $HOME/Library/Application\ Support/Code/User
 ln -s $DOTFILES_PATH/config/vscode/settings.json $HOME/.code-server/User/settings.json
 ln -s $DOTFILES_PATH/config/vscode/keybindings.json $HOME/.code-server/User/keybindings.json
 ln -s $DOTFILES_PATH/config/vscode/snippets $HOME/.code-server/User/
