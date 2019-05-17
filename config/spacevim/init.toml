@@ -25,6 +25,7 @@
     enable_tabline_filetype_icon = false
     enable_statusline_display_mode = false
     enable_vimfiler_gitstatus = true
+    relativenumber = false
     bootstrap_before = "customconfig#before"
     bootstrap_after = "customconfig#after"
     custom_color_palette = [

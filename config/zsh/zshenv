@@ -1,4 +1,10 @@
-export PATH="$HOME/google-cloud-sdk/bin:$HOME/.cargo/bin:$HOME/go/bin:$HOME/.yarn/bin:$HOME/.local/bin:$HOME/.rvm/bin:$PATH"
+export PATH="$HOME/google-cloud-sdk/bin:\
+$HOME/.cargo/bin:\
+$HOME/go/bin:\
+$HOME/.yarn/bin:\
+$HOME/.local/bin:\
+$HOME/.rvm/bin:\
+/snap/bin:$PATH"
 if [ -x /usr/libexec/path_helper ]; then
 	eval `/usr/libexec/path_helper -s`
 fi
