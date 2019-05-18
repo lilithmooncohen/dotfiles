@@ -30,7 +30,6 @@ brew install \
     zsh
 brew install global --with-pygments --with-ctags
 brew cask install powershell
-sudo sh -c "echo $(which zsh) >> /etc/shells"
 ```
 
 ### Debian / Ubuntu
@@ -117,7 +116,7 @@ ln -s $DOTFILES_PATH/config/vscode/snippets $HOME/.code-server/User/
 ln -s $DOTFILES_PATH/config/terminator/config $HOME/.config/terminator/config
 
 # Change default shell
-chsh -s $(which zsh)
+chsh -s /bin/zsh
 ```
 
 ### Install fonts
