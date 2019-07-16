@@ -93,6 +93,7 @@
     - name: "Install the kitchen sink"
       apt:
         name: [
+          "awscli",
           "autoconf",
           "build-essential",
           "ctags",
@@ -110,7 +111,6 @@
           "neovim",
           "net-tools",
           "nodejs",
-          "npm",
           "openssl",
           "powershell",
           "python-dev",
@@ -205,7 +205,7 @@
 
     - name: "Install Terraform"
       unarchive:
-        src: "https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip"
+        src: "https://releases.hashicorp.com/terraform/0.12.3/terraform_0.12.3_linux_amd64.zip"
         dest: /usr/local/bin
         remote_src: yes
 
