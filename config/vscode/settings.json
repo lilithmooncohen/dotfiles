@@ -19,11 +19,10 @@
     "window.zoomLevel": 0,
     "breadcrumbs.enabled": true,
     "editor.minimap.enabled": true,
-    "workbench.fontAliasing": "antialiased",
     "git.autofetch": true,
     "terminal.external.linuxExec": "xterm-256color",
     "terminal.integrated.fontFamily": "FuraCode Nerd Font",
-    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.fontSize": 15,
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
         {
@@ -1110,7 +1109,7 @@
         }
     ],
     "vim.easymotion": true,
-    "editor.fontSize": 14,
+    "editor.fontSize": 15,
     "editor.fontFamily": "FuraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
     "workbench.colorTheme": "Dracula",
     "workbench.colorCustomizations": {
@@ -1135,10 +1134,12 @@
         "terminal.ansiWhite":"#E9E9F4",
         "terminal.ansiYellow":"#00F769"
     },
-    "workbench.sideBar.location": "right",
     "editor.fontLigatures": true,
     "workbench.statusBar.feedback.visible": false,
     "window.nativeTabs": true,
     "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false
+    "telemetry.enableTelemetry": false,
+    "workbench.fontAliasing": "auto",
+    "markdown.preview.fontSize": 15,
+    "files.trimTrailingWhitespace": true
 }
