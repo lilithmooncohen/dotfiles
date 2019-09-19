@@ -1141,5 +1141,19 @@
     "telemetry.enableTelemetry": false,
     "workbench.fontAliasing": "auto",
     "markdown.preview.fontSize": 15,
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "terraform.indexing": {
+        "enabled": false,
+        "liveIndexing": false,
+        "delay": 500,
+        "exclude": [
+            ".terraform/**/*",
+            "**/.terraform/**/*"
+        ]
+    },
+    "terraform.languageServer": {
+        "enabled": true,
+        "args": []
+    },
+    "workbench.editor.enablePreview": false
 }
