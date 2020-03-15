@@ -66,6 +66,8 @@ values."
      syntax-checking
      terraform
      tmux
+     (typescript :variables
+                 typescript-fmt-on-save t)
      (version-control :variables
                       version-control-diff-tool 'diff-hl
                       version-control-diff-side 'left
