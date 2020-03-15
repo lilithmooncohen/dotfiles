@@ -1,4 +1,4 @@
-# ryanckoch dotfiles
+# lilithmooncohen dotfiles
 These are my dotfiles for setting up my development environment. I use them to configure both my local machine and any jump host or development server that I use.
 
 ## Grab the dotfiles
@@ -6,7 +6,7 @@ These are my dotfiles for setting up my development environment. I use them to c
 export DOTFILES_PATH="$HOME/.dotfiles"
 
 # Clone the repo
-git clone --recursive https://github.com/ryanckoch/dotfiles.git $DOTFILES_PATH
+git clone --recursive https://github.com/lilithmooncohen/dotfiles.git $DOTFILES_PATH
 cd $DOTFILES_PATH
 ```
 
