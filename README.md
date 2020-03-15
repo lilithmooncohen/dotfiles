@@ -49,7 +49,8 @@ yarn global add \
   javascript-typescript-langserver \
   neovim \
   tern \
-  typescript
+  typescript \
+  vmd
 
 go get -u github.com/sourcegraph/go-langserver
 
