@@ -21,9 +21,105 @@
     "editor.minimap.enabled": true,
     "git.autofetch": true,
     "terminal.external.linuxExec": "xterm-256color",
-    "terminal.integrated.fontFamily": "FuraCode Nerd Font",
+    "terminal.integrated.fontFamily": "monospace",
     "terminal.integrated.fontSize": 15,
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
     "vim.leader": "<space>",
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "<space>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.showCommands",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                ";",
+                ";"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.commentLine",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "f",
+                "d"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "j",
+                "="
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.format",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "j",
+                "j"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "s"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "j",
+                "l"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "leader",
+                "b",
+                "d",
+                "j",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "j",
+                "w"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "leader",
+                "b",
+                "d",
+                "w"
+            ]
+        }
+    ],
     "vim.normalModeKeyBindings": [
         {
             "before": [
@@ -46,7 +142,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.openNextRecentlyUsedEditorInGroup",
+                    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
                     "args": []
                 }
             ]
@@ -227,6 +323,20 @@
             "before": [
                 "<leader>",
                 "b",
+                "<C-d>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.closeOtherEditors",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b",
                 "n"
             ],
             "after": [],
@@ -302,7 +412,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "editor.action.marker.previous",
+                    "command": "editor.action.marker.prev",
                     "args": []
                 }
             ]
@@ -329,15 +439,9 @@
             ],
             "after": [],
             "commands": [
-                //{
-                //    "command": "workbench.action.files.openFile",
-                //    "args": [],
-                //    "when": "!isMac"
-                //},
                 {
-                    "command": "workbench.action.files.openFileFolder",
-                    "args": [],
-                    //"when": "isMac"
+                    "command": "workbench.action.files.openFile",
+                    "args": []
                 }
             ]
         },
@@ -379,6 +483,20 @@
             "commands": [
                 {
                     "command": "workbench.view.explorer",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "T"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.files.action.showActiveFileInExplorer",
                     "args": []
                 }
             ]
@@ -646,6 +764,20 @@
             "commands": [
                 {
                     "command": "workbench.action.quickOpen",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p",
+                "g"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.showEditorsInActiveGroup",
                     "args": []
                 }
             ]
@@ -1021,7 +1153,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.maximizeEditor",
+                    "command": "workbench.action.toggleEditorWidths",
                     "args": []
                 }
             ]
@@ -1110,7 +1242,7 @@
     ],
     "vim.easymotion": true,
     "editor.fontSize": 15,
-    "editor.fontFamily": "FuraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "FiraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
     "workbench.colorTheme": "Dracula",
     "workbench.colorCustomizations": {
         "terminal.background":"#282936",
@@ -1211,3 +1343,4 @@
         }
     ]
 }
+
