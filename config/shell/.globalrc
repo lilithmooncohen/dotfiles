@@ -1,0 +1,25 @@
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ]; then PATH="$HOME/bin:$PATH"; fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ]; then PATH="$HOME/.local/bin:$PATH"; fi
+
+# set PATH so it includes cargo's bin if it exists
+if [ -d "$CARGO_BIN" ]; then PATH="$CARGO_BIN:$PATH"; fi
+
+# set PATH so it includes go's bin if it exists
+if [ -d "$GOBIN" ]; then PATH="$GOBIN:$PATH"; fi
+
+# set PATH so it includes yarn's bin if it exists
+if [ -d "$YARN_BIN" ]; then PATH="$YARN_BIN:$PATH"; fi
+
+# set PATH so it includes rvm's bin if it exists
+if [ -d "$RVM_BIN" ]; then PATH="$RVM_BIN:$PATH"; fi
+
+# set PATH so it includes snap's bin if it exists
+if [ -d "$SNAP_BIN" ]; then PATH="$SNAP_BIN:$PATH"; fi
+
+# path helper
+if [ -x /usr/libexec/path_helper ]; then
+  eval `/usr/libexec/path_helper -s`
+fi

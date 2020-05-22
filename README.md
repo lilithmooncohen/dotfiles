@@ -69,9 +69,6 @@ pip3 install \
 .config/terminator/config
 .oh_my_zsh/
 .profile
-.zshenv
-.zprofile
-.bash_profile
 .bashrc
 .SpaceVim/
 .SpaceVim.d/
@@ -94,11 +91,9 @@ mkdir -p $HOME/.code-server/User
 ln -s $DOTFILES_PATH/src/github/Shougo/dein.vim $HOME/.cache/vimfiles/repos/github.com/Shougo/dein.vim
 ln -s $DOTFILES_PATH/config/tmux $HOME/.tmux
 ln -s $DOTFILES_PATH/config/tmux/tmux.conf $HOME/.tmux.conf
-ln -s $DOTFILES_PATH/config/zsh/zshenv $HOME/.zshenv
-ln -s $DOTFILES_PATH/config/zsh/zprofile $HOME/.zprofile
-ln -s $DOTFILES_PATH/config/zsh/zshrc $HOME/.zshrc
-ln -s $DOTFILES_PATH/config/bash/bash_profile $HOME/.bash_profile
-ln -s $DOTFILES_PATH/config/bash/bashrc $HOME/.bashrc
+ln -s $DOTFILES_PATH/config/shell/.profile $HOME/.profile
+ln -s $DOTFILES_PATH/config/shell/.zshrc $HOME/.zshrc
+ln -s $DOTFILES_PATH/config/bash/.bashrc $HOME/.bashrc
 ln -s $DOTFILES_PATH/src/github/robbyrussell/oh-my-zsh $HOME/.oh-my-zsh
 ln -s $DOTFILES_PATH/src/github/SpaceVim/SpaceVim $HOME/.SpaceVim
 ln -s $DOTFILES_PATH/src/github/SpaceVim/SpaceVim $HOME/.vim
