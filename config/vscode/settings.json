@@ -18,7 +18,7 @@
     "sync.forceDownload": false,
     "window.zoomLevel": 0,
     "breadcrumbs.enabled": true,
-    "editor.minimap.enabled": true,
+    "editor.minimap.enabled": false,
     "git.autofetch": true,
     "terminal.external.linuxExec": "xterm-256color",
     "terminal.integrated.fontFamily": "monospace",
