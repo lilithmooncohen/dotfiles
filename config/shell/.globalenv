@@ -22,3 +22,12 @@ RVM_HOME="${RVM_HOME:=$HOME/.rvm}"
 RVM_BIN="${RVM_BIN:=$RVM_HOME/bin}"
 SNAP_HOME="${SNAP_HOME:=/snap}"
 SNAP_BIN="${SNAP_BIN:=$SNAP_HOME/bin}"
+
+# Set OS specific environment variables
+if [[ "$OSTYPE" = darwin* ]]; then
+    PYTHON2_BIN="${PYTHON2_BIN:=$HOME/Library/Python/2.7/bin}"
+    PYTHON3_BIN="${PYTHON3_BIN:=$HOME/Library/Python/3/bin}"
+else
+    PYTHON2_BIN="${PYTHON2_BIN:=$HOME/.local/bin}"
+    PYTHON3_BIN="${PYTHON3_BIN:=$HOME/.local/bin}"
+fi

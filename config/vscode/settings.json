@@ -23,7 +23,7 @@
     "terminal.external.linuxExec": "xterm-256color",
     "terminal.integrated.fontFamily": "monospace",
     "terminal.integrated.fontSize": 15,
-    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "terminal.integrated.shell.osx": "/bin/zsh",
     "vim.leader": "<space>",
     "vim.visualModeKeyBindings": [
         {
@@ -1242,7 +1242,6 @@
     ],
     "vim.easymotion": true,
     "editor.fontSize": 15,
-    "editor.fontFamily": "FiraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
     "workbench.colorTheme": "Dracula",
     "workbench.colorCustomizations": {
         "terminal.background":"#282936",
@@ -1284,8 +1283,10 @@
         ]
     },
     "terraform.languageServer": {
-        "enabled": true,
-        "args": []
+        "external": true,
+        "args": [
+            "serve"
+        ]
     },
     "workbench.editor.enablePreview": false,
     "peacock.favoriteColors": [
@@ -1341,6 +1342,6 @@
             "name": "Vue Green",
             "value": "#42b883"
         }
-    ]
+    ],
+    "remote.restoreForwardedPorts": true
 }
-
