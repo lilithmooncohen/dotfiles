@@ -27,7 +27,6 @@ if [ -d "$PYTHON3_BIN" ]; then PATH="$PYTHON3_BIN:$PATH"; fi
 
 # Remove any potential duplicate entries in PATH
 PATH=$(echo -n $PATH | awk -v RS=: '!($0 in a) {a[$0]; printf("%s%s", length(a) > 1 ? ":" : "", $0)}')
-echo $PATH
 
 # path helper
 if [ -x /usr/libexec/path_helper ]; then
