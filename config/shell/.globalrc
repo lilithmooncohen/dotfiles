@@ -20,10 +20,13 @@ if [ -d "$RVM_BIN" ]; then PATH="$RVM_BIN:$PATH"; fi
 if [ -d "$SNAP_BIN" ]; then PATH="$SNAP_BIN:$PATH"; fi
 
 # set PATH so it includes python2's bin if it exists
-if [ -d "$PYTHON2_BIN" ]; then PATH="$PYTHON2_BIN:$PATH"; fi
+if [ -n "$PYTHON2_BIN" ] && [ -d "$PYTHON2_BIN" ]; then PATH="$PYTHON2_BIN:$PATH"; fi
 
 # set PATH so it includes python3's bin if it exists
-if [ -d "$PYTHON3_BIN" ]; then PATH="$PYTHON3_BIN:$PATH"; fi
+if [ -n "$PYTHON3_BIN" ] && [ -d "$PYTHON3_BIN" ]; then PATH="$PYTHON3_BIN:$PATH"; fi
+
+# set PATH so it includes missionctl's bin if it exists
+if [ -d "$MISSIONCTL_BIN" ]; then PATH="$MISSIONCTL_BIN:$PATH"; fi
 
 # Remove any potential duplicate entries in PATH
 PATH=$(echo -n $PATH | awk -v RS=: '!($0 in a) {a[$0]; printf("%s%s", length(a) > 1 ? ":" : "", $0)}')

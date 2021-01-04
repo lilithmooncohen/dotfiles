@@ -14,8 +14,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias vim='nvim'
-alias python2.7='/usr/bin/python'
-alias python='/usr/bin/python3'
-alias pip='/usr/bin/pip3'
+alias python=$(which python3)
+alias pip=$(which pip3)
 alias emacsd="$HOME/.dotfiles/src/local/scripts/emacsdaemon.sh"
-

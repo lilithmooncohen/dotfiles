@@ -3,17 +3,31 @@
     - homebrew_tap:
         name: "d12frosted/emacs-plus"
         state: present
-    - name: Install Packages
+    - name: install go
       homebrew:
-        name: [
-          "emacs-plus",
-          "go",
-          "neovim",
-          "python",
-          "python@2",
-          "tmux",
-          "yarn",
-          "vim",
-          "zsh"
-        ]
+        name: "go"
+        state: present
+    - name: install yarn
+      homebrew:
+        name: "yarn"
+        state: present
+    - name: install vim
+      homebrew:
+        name: "vim"
+        state: present
+    - name: install neovim
+      homebrew:
+        name: "neovim"
+        state: present
+    - name: install emacs-plus
+      homebrew:
+        name: "emacs-plus"
+        state: present
+    - name: install tmux
+      homebrew:
+        name: "tmux"
+        state: present
+    - name: install tfenv
+      homebrew:
+        name: "tfenv"
         state: present
