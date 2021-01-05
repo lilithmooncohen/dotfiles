@@ -98,7 +98,7 @@
           "build-essential",
           "ctags",
           "elixir",
-          "emacs-nox",
+          "emacs27-nox",
           "esl-erlang",
           "git",
           "global",
