@@ -31,3 +31,7 @@
       homebrew:
         name: "tfenv"
         state: present
+    - name: install missionctl
+      pip:
+        name: missionctl
+        state: present
