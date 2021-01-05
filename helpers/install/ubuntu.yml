@@ -205,19 +205,19 @@
 
     - name: "Install Terraform"
       unarchive:
-        src: "https://releases.hashicorp.com/terraform/0.12.3/terraform_0.12.3_linux_amd64.zip"
+        src: "https://releases.hashicorp.com/terraform/0.14.3/terraform_0.14.3_linux_amd64.zip"
         dest: /usr/local/bin
         remote_src: yes
 
     - name: "Install Vault"
       unarchive:
-        src: "https://releases.hashicorp.com/vault/1.1.1/vault_1.1.1_linux_amd64.zip"
+        src: "https://releases.hashicorp.com/vault/1.6.1/vault_1.6.1_linux_amd64.zip"
         dest: /usr/local/bin
         remote_src: yes
 
     - name: "Install Helm"
       unarchive:
-        src: "https://kubernetes-helm.storage.googleapis.com/helm-v2.12.1-linux-amd64.tar.gz"
+        src: "https://kubernetes-helm.storage.googleapis.com/helm-v3.4.2-linux-amd64.tar.gz"
         dest: /usr/local/bin
         extra_opts: [--strip-components=1]
         remote_src: yes
@@ -233,19 +233,6 @@
         url: "https://raw.githubusercontent.com/ahmetb/kubectx/master/kubens"
         dest: "/usr/local/bin/kubens"
         mode: "u=rw,g=rx,o=rx"
-
-    - name: "Install code-server"
-      unarchive:
-        src: "https://github.com/codercom/code-server/releases/download/1.939-vsc1.33.1/code-server1.939-vsc1.33.1-linux-x64.tar.gz"
-        dest: /usr/local/bin
-        extra_opts: [--strip-components=1]
-        remote_src: yes
-
-    - name: "Install ssh-code"
-      unarchive:
-        src: "https://github.com/codercom/sshcode/releases/download/v0.6.0/sshcode-linux-amd64.tar"
-        dest: /usr/local/bin
-        remote_src: yes
 
     - name: "Install terraform-docs"
       get_url:
