@@ -59,21 +59,21 @@
         deb: "/tmp/ansible-downloads-packages-microsoft-prod.deb"
         state: "present"
 
-    - name: "Add Docker apt key"
-      apt_key:
-        url: "https://download.docker.com/linux/ubuntu/gpg"
-        state: "present"
+    #- name: "Add Docker apt key"
+    #  apt_key:
+    #    url: "https://download.docker.com/linux/ubuntu/gpg"
+    #    state: "present"
 
-    - name: "Add Docker apt repo"
-      apt_repository:
-        repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
-        state: "present"
+    #- name: "Add Docker apt repo"
+    #  apt_repository:
+    #    repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+    #    state: "present"
 
-    - name: "Install docker-compose"
-      get_url:
-        url: "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-Linux-x86_64"
-        dest: "/usr/local/bin/docker-compose"
-        mode: 0755
+    #- name: "Install docker-compose"
+    #  get_url:
+    #    url: "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-Linux-x86_64"
+    #    dest: "/usr/local/bin/docker-compose"
+    #    mode: 0755
 
     - name: "Add NeoVim apt repo"
       apt_repository:
