@@ -97,7 +97,6 @@
           "autoconf",
           "build-essential",
           "ctags",
-          "docker-ce",
           "elixir",
           "emacs-nox",
           "esl-erlang",
