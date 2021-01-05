@@ -216,7 +216,7 @@
 
     - name: "Install Helm"
       unarchive:
-        src: "https://kubernetes-helm.storage.googleapis.com/helm-v3.4.2-linux-amd64.tar.gz"
+        src: "https://get.helm.sh/helm-v3.4.2-linux-amd64.tar.gz"
         dest: /usr/local/bin
         extra_opts: [--strip-components=1]
         remote_src: yes
