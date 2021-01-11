@@ -31,6 +31,14 @@
       homebrew:
         name: "tfenv"
         state: present
+    - name: install kubectl
+      homebrew:
+        name: "kubectl"
+        state: present
+    - name: install kubectx
+      homebrew:
+        name: "kubectx"
+        state: present
     - name: install missionctl
       pip:
         name: missionctl
