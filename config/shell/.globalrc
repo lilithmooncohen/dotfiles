@@ -1,7 +1,8 @@
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ]; then PATH="$HOME/bin:$PATH"; fi
+# set PATH so it includes dotfiles bin if it exists
+if [ -d "$DOTFILES_BIN" ]; then PATH="$DOTFILES_BIN:$PATH"; fi
 
-# set PATH so it includes user's private bin if it exists
+# set PATH so it includes user's private bin directories if they exists
+if [ -d "$HOME/bin" ]; then PATH="$HOME/bin:$PATH"; fi
 if [ -d "$HOME/.local/bin" ]; then PATH="$HOME/.local/bin:$PATH"; fi
 
 # set PATH so it includes cargo's bin if it exists
@@ -24,6 +25,9 @@ if [ -n "$PYTHON2_BIN" ] && [ -d "$PYTHON2_BIN" ]; then PATH="$PYTHON2_BIN:$PATH
 
 # set PATH so it includes python3's bin if it exists
 if [ -n "$PYTHON3_BIN" ] && [ -d "$PYTHON3_BIN" ]; then PATH="$PYTHON3_BIN:$PATH"; fi
+
+# set PATH so it includes helmenv's bin if it exists
+if [ -d "$HELMENV_BIN" ]; then PATH="$HELMENV_BIN:$PATH"; fi
 
 # set PATH so it includes missionctl's bin if it exists
 if [ -d "$MISSIONCTL_BIN" ]; then PATH="$MISSIONCTL_BIN:$PATH"; fi
