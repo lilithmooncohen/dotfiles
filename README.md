@@ -70,33 +70,33 @@ pip3 install \
 ### Install dotfiles
 ```
 # Create symlinks
-mkdir -p $HOME/.config
-mkdir -p $HOME/.cache/vimfiles/repos/github.com/Shougo
-mkdir -p $HOME/.config/Code/User
-mkdir -p $HOME/Library/Application\ Support/Code
-mkdir -p $HOME/.code-server/User
-ln -s ~/.dotfiles/src/github/Shougo/dein.vim $HOME/.cache/vimfiles/repos/github.com/Shougo/dein.vim
-ln -s ~/.dotfiles/config/tmux $HOME/.tmux
-ln -s ~/.dotfiles/config/tmux/tmux.conf $HOME/.tmux.conf
-ln -s ~/.dotfiles/config/shell/.profile $HOME/.profile
-ln -s ~/.dotfiles/config/shell/.zshrc $HOME/.zshrc
-ln -s ~/.dotfiles/config/bash/.bashrc $HOME/.bashrc
-ln -s ~/.dotfiles/src/github/robbyrussell/oh-my-zsh $HOME/.oh-my-zsh
-ln -s ~/.dotfiles/src/github/SpaceVim/SpaceVim $HOME/.SpaceVim
-ln -s ~/.dotfiles/src/github/SpaceVim/SpaceVim $HOME/.vim
-ln -s ~/.dotfiles/src/github/syl20bnr/spacemacs $HOME/.emacs.d
-ln -s ~/.dotfiles/config/spacemacs/.spacemacs $HOME/.spacemacs
-ln -s ~/.dotfiles/config/base16/vim/.vimrc_background $HOME/.vimrc_background
-ln -s ~/.dotfiles/src/github/SpaceVim/SpaceVim $HOME/.config/nvim
-ln -s ~/.dotfiles/config/spacevim/ $HOME/.SpaceVim.d
-ln -s ~/.dotfiles/config/vscode/settings.json $HOME/.config/Code/User/settings.json
-ln -s ~/.dotfiles/config/vscode/keybindings.json $HOME/.config/Code/User/keybindings.json
-ln -s ~/.dotfiles/config/vscode/snippets $HOME/.config/Code/User/
-ln -s $HOME/.config/Code/User $HOME/Library/Application\ Support/Code/User
-ln -s ~/.dotfiles/config/vscode/settings.json $HOME/.code-server/User/settings.json
-ln -s ~/.dotfiles/config/vscode/keybindings.json $HOME/.code-server/User/keybindings.json
-ln -s ~/.dotfiles/config/vscode/snippets $HOME/.code-server/User/
-ln -s ~/.dotfiles/config/terminator/config $HOME/.config/terminator/config
+mkdir -p ~/.config
+mkdir -p ~/.cache/vimfiles/repos/github.com/Shougo
+mkdir -p ~/.config/Code/User
+mkdir -p ~/Library/Application\ Support/Code
+mkdir -p ~/.code-server/User
+ln -s ~/.dotfiles/src/github/Shougo/dein.vim ~/.cache/vimfiles/repos/github.com/Shougo/dein.vim
+ln -s ~/.dotfiles/config/tmux ~/.tmux
+ln -s ~/.dotfiles/config/tmux/tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/config/shell/.profile ~/.profile
+ln -s ~/.dotfiles/config/shell/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/config/bash/.bashrc ~/.bashrc
+ln -s ~/.dotfiles/src/github/robbyrussell/oh-my-zsh ~/.oh-my-zsh
+ln -s ~/.dotfiles/src/github/SpaceVim/SpaceVim ~/.SpaceVim
+ln -s ~/.dotfiles/src/github/SpaceVim/SpaceVim ~/.vim
+ln -s ~/.dotfiles/src/github/syl20bnr/spacemacs ~/.emacs.d
+ln -s ~/.dotfiles/config/spacemacs/.spacemacs ~/.spacemacs
+ln -s ~/.dotfiles/config/base16/vim/.vimrc_background ~/.vimrc_background
+ln -s ~/.dotfiles/src/github/SpaceVim/SpaceVim ~/.config/nvim
+ln -s ~/.dotfiles/config/spacevim/ ~/.SpaceVim.d
+ln -s ~/.dotfiles/config/vscode/settings.json ~/.config/Code/User/settings.json
+ln -s ~/.dotfiles/config/vscode/keybindings.json ~/.config/Code/User/keybindings.json
+ln -s ~/.dotfiles/config/vscode/snippets ~/.config/Code/User/
+ln -s ~/.config/Code/User ~/Library/Application\ Support/Code/User
+ln -s ~/.dotfiles/config/vscode/settings.json ~/.code-server/User/settings.json
+ln -s ~/.dotfiles/config/vscode/keybindings.json ~/.code-server/User/keybindings.json
+ln -s ~/.dotfiles/config/vscode/snippets ~/.code-server/User/
+ln -s ~/.dotfiles/config/terminator/config ~/.config/terminator/config
 
 # Change default shell
 chsh -s /bin/zsh
@@ -105,26 +105,26 @@ chsh -s /bin/zsh
 ### Install fonts
 
 ```
-mkdir -p $HOME/.local/share/fonts
-cp ~/.dotfiles/src/local/fonts/* $HOME/.local/share/fonts
+mkdir -p ~/.local/share/fonts
+cp ~/.dotfiles/src/local/fonts/* ~/.local/share/fonts
 ```
 
 #### Mac
 ```
-cp $HOME/.local/share/fonts/* $HOME/Library/Fonts/
+cp ~/.local/share/fonts/* ~/Library/Fonts/
 ```
 
 #### Linux
 ```
 fc-cache -fv > /dev/null
-mkfontdir "$HOME/.local/share/fonts" > /dev/null
-mkfontscale "$HOME/.local/share/fonts" > /dev/null
+mkfontdir "~/.local/share/fonts" > /dev/null
+mkfontscale "~/.local/share/fonts" > /dev/null
 ```
 
 ## Update
 To update all submodules, do the following:
 ```
-export DOTFILES_PATH="$HOME/.dotfiles"
+export DOTFILES_PATH="~/.dotfiles"
 cd ~/.dotfiles
 git pull
 git submodule update --init --recursive
