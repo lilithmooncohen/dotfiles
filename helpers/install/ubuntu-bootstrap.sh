@@ -11,7 +11,7 @@ fi
 
 # install ansible via pip if not installed
 if ! command -v ansible >/dev/null 2>&1; then
-    pip3 -u ansible
+    pip3 install --user ansible
 fi
 
 # run ansible playbook
