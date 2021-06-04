@@ -127,5 +127,5 @@ To update all submodules, do the following:
 export DOTFILES_PATH="~/.dotfiles"
 cd ~/.dotfiles
 git pull
-git submodule update --init --recursive
+git submodule update --init --recursive && git submodule update --recursive --remote
 ```
