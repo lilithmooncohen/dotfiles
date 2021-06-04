@@ -22,3 +22,6 @@
 [submodule "src/github/syl20bnr/spacemacs"]
 	path = src/github/syl20bnr/spacemacs
 	url = https://github.com/syl20bnr/spacemacs.git
+[submodule "src/github/tfutils/tfenv"]
+	path = src/github/tfutils/tfenv
+	url = https://github.com/tfutils/tfenv.git

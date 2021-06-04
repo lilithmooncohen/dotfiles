@@ -77,7 +77,6 @@
     - name: "Install the kitchen sink"
       apt:
         name: [
-          "awscli",
           "autoconf",
           "build-essential",
           "ctags",
@@ -186,21 +185,9 @@
       register: mosh_make_install
       when: mosh_make.changed or mosh_binary_file.stat.exists == False
 
-    - name: "Install Terraform"
-      unarchive:
-        src: "https://releases.hashicorp.com/terraform/0.12.29/terraform_0.12.29_linux_amd64.zip"
-        dest: /usr/local/bin
-        remote_src: yes
-
     - name: "Install Vault"
       unarchive:
         src: "https://releases.hashicorp.com/vault/1.3.4/vault_1.3.4_linux_amd64.zip"
         dest: /usr/local/bin
         remote_src: yes
 
-    - name: "Install Helm"
-      unarchive:
-        src: "https://kubernetes-helm.storage.googleapis.com/helm-v3.1.2-linux-amd64.tar.gz"
-        dest: /usr/local/bin
-        extra_opts: [--strip-components=1]
-        remote_src: yes

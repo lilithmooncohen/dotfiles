@@ -27,10 +27,6 @@
       homebrew:
         name: "tmux"
         state: present
-    - name: install tfenv
-      homebrew:
-        name: "tfenv"
-        state: present
     - name: install kubectl
       homebrew:
         name: "kubectl"
