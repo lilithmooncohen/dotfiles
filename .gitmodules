@@ -25,3 +25,6 @@
 [submodule "src/github/tfutils/tfenv"]
 	path = src/github/tfutils/tfenv
 	url = https://github.com/tfutils/tfenv.git
+[submodule "src/github/yuya-takeyama/helmenv"]
+	path = src/github/yuya-takeyama/helmenv
+	url = https://github.com/yuya-takeyama/helmenv.git
