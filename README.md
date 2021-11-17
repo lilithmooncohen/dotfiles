@@ -9,7 +9,7 @@ git clone --recursive https://github.com/lilithmooncohen/dotfiles.git ~/.dotfile
 
 ## Install pip and Ansible
 ```
-sudo pip install ansible
+pip install ansible
 ```
 
 ## OS Specific Prep

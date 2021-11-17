@@ -6,7 +6,8 @@ SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 # install pip3 if not installed
 if ! command -v pip3 >/dev/null 2>&1; then
-    sudo apt-get install python3-pip
+    sudo apt update
+    sudo apt install python3-pip
 fi
 
 # install ansible via pip if not installed
@@ -15,4 +16,4 @@ if ! command -v ansible >/dev/null 2>&1; then
 fi
 
 # run ansible playbook
-ansible-playbook ${SCRIPTDIR}/ubuntu.yml --ask-become-pass
+~/.local/bin/ansible-playbook ${SCRIPTDIR}/ubuntu.yml --ask-become-pass
