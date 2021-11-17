@@ -41,7 +41,7 @@
 
     - name: "Download Elixir apt repo deb"
       get_url:
-        url: "https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb"
+        url: "https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb"
         dest: "/tmp/ansible-downloads-erlang-solutions.deb"
 
     - name: "Add Elixir apt repo"
@@ -98,7 +98,7 @@
           "build-essential",
           "ctags",
           "elixir",
-          "emacs27-nox",
+          #"emacs27-nox",
           "esl-erlang",
           "git",
           "global",
@@ -112,10 +112,10 @@
           "nodejs",
           "openssl",
           "powershell",
-          "python-dev",
-          "python-pip",
-          "python3-dev",
-          "python3-pip",
+          #"python-dev",
+          #"python-pip",
+          #"python3-dev",
+          #"python3-pip",
           "ruby",
           "shellcheck",
           "tmux",
