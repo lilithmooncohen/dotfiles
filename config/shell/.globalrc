@@ -32,9 +32,6 @@ if [ -d "$HELMENV_BIN" ]; then PATH="$HELMENV_BIN:$PATH"; fi
 # set PATH so it includes tfenv's bin if it exists
 if [ -d "$TFENV_BIN" ]; then PATH="$TFENV_BIN:$PATH"; fi
 
-# set PATH so it includes missionctl's bin if it exists
-if [ -d "$MISSIONCTL_BIN" ]; then PATH="$MISSIONCTL_BIN:$PATH"; fi
-
 # Remove any potential duplicate entries in PATH
 PATH=$(echo -n $PATH | awk -v RS=: '!($0 in a) {a[$0]; printf("%s%s", length(a) > 1 ? ":" : "", $0)}')
 

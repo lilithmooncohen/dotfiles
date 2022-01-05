@@ -1,7 +1,12 @@
 - hosts: localhost
   tasks:
-    - homebrew_tap:
+    - name: add emacs tap
+      homebrew_tap:
         name: "d12frosted/emacs-plus"
+        state: present
+    - name: add little-angry-clouds tap
+      homebrew_tap:
+        name: "little-angry-clouds/homebrew-my-brews"
         state: present
     - name: install go
       homebrew:
@@ -30,10 +35,6 @@
     - name: install tmux
       homebrew:
         name: "tmux"
-        state: present
-    - name: install kubectl
-      homebrew:
-        name: "kubectl"
         state: present
     - name: install kubectx
       homebrew:
