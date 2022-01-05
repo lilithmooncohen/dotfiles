@@ -7,8 +7,10 @@ These are my dotfiles for setting up my development environment. I use them to c
 git clone --recursive https://github.com/lilithmooncohen/dotfiles.git ~/.dotfiles
 ```
 
-## Install pip and Ansible
+## Install rust, upgrade pip, and install ansible
 ```
+curl https://sh.rustup.rs -sSf | sh -s -- -y
+pip install --upgrade pip
 pip install ansible
 ```
 
@@ -26,8 +28,6 @@ pip install ansible
 
 ## Install dependencies
 ```
-curl https://sh.rustup.rs -sSf | sh -s -- -y
-
 yarn global add \
   bash-language-server \
   dockerfile-language-server-nodejs \
