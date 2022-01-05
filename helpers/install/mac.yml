@@ -7,6 +7,10 @@
       homebrew:
         name: "go"
         state: present
+    - name: install node
+      homebrew:
+        name: "node"
+        state: present
     - name: install yarn
       homebrew:
         name: "yarn"
@@ -34,8 +38,4 @@
     - name: install kubectx
       homebrew:
         name: "kubectx"
-        state: present
-    - name: install missionctl
-      pip:
-        name: missionctl
         state: present
