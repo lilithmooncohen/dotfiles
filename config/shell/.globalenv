@@ -38,3 +38,5 @@ if command -v python3 >/dev/null 2>&1; then
     PYTHON3_HOME="${PYTHON3_HOME:=$(python3 -m site --user-base)}"
     PYTHON3_BIN="${PYTHON3_BIN:=$PYTHON3_HOME/bin}"
 fi
+
+if [ -f "/opt/homebrew/bin/brew" ]; then eval "$(/opt/homebrew/bin/brew shellenv)"; fi
