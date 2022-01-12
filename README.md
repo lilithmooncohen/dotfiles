@@ -33,20 +33,21 @@ yarn global add \
   dockerfile-language-server-nodejs \
   eslint-cli \
   import-js \
-  javascript-typescript-langserver \
+  typescript-language-server \
   neovim \
   tern \
   typescript \
   vmd
 
-go get -u github.com/sourcegraph/go-langserver
+#go get -u github.com/sourcegraph/go-langserver
+go install golang.org/x/tools/gopls@latest
 
-pip install \
-	neovim \
-	python-language-server && \
 pip3 install \
-	neovim \
-	python-language-server
+  neovim \
+  pynvim \
+  websocket-client \
+  sexpdata \
+  python-language-server
 ```
 
 ## Initialize Dotfiles

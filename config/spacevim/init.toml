@@ -46,7 +46,7 @@ name = 'autocomplete'
 auto-completion-return-key-behavior = "nil"
 auto-completion-return-key-behavior = "complete"
 auto-completion-tab-key-behavior = "smart"
-auto-completion-complete-with-key-sequence = "jk"
+#auto-completion-complete-with-key-sequence = "jk"
 auto-completion-complete-with-key-sequence-delay = 0.1
 
 [[layers]]
@@ -174,8 +174,8 @@ default_height = 15
 [[layers]]
   name = "lang#rust"
 
-[[layers]]
-  name = "lang#scala"
+#[[layers]]
+#  name = "lang#scala"
 
 [[layers]]
   name = "lang#sh"
