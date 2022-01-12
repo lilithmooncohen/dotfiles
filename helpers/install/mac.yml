@@ -4,6 +4,10 @@
       homebrew_tap:
         name: "d12frosted/emacs-plus"
         state: present
+    - name: install watch
+      homebrew:
+        name: "watch"
+        state: present
     - name: install go
       homebrew:
         name: "go"
@@ -35,4 +39,36 @@
     - name: install kubectx
       homebrew:
         name: "kubectx"
+        state: present
+    - name: install gh
+      homebrew:
+        name: "gh"
+        state: present
+    - name: install jq
+      homebrew:
+        name: "jq"
+        state: present
+    - name: install yq
+      homebrew:
+        name: "yq"
+        state: present
+    - name: install awscli
+      homebrew:
+        name: "awscli"
+        state: present
+    - name: install google-cloud-sdk
+      homebrew:
+        name: "google-cloud-sdk"
+        state: present
+    - name: install 1password-cli
+      homebrew:
+        name: "1password-cli"
+        state: present
+    - name: install asdf
+      homebrew:
+        name: "asdf"
+        state: present
+    - name: install ffmpeg
+      homebrew:
+        name: "ffmpeg"
         state: present
