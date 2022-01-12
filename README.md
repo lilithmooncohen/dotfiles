@@ -39,7 +39,6 @@ yarn global add \
   typescript \
   vmd
 
-#go get -u github.com/sourcegraph/go-langserver
 go install golang.org/x/tools/gopls@latest
 
 pip3 install \
