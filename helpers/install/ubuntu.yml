@@ -29,6 +29,16 @@
         repo: "ppa:longsleep/golang-backports"
         state: "present"
 
+    - name: "Add node apt key"
+      apt_key:
+        url: "https://deb.nodesource.com/gpgkey/nodesource.gpg.key"
+        state: "present"
+
+    - name: "Add node apt repo"
+      apt_repository:
+        repo: "deb https://dl.yarnpkg.com/debian stable main"
+        state: "present"
+
     - name: "Add yarn apt key"
       apt_key:
         url: "https://dl.yarnpkg.com/debian/pubkey.gpg"
