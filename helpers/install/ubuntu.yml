@@ -1,4 +1,6 @@
 - hosts: localhost
+  roles:
+    - deekayen.awscli2
   become: true
   tasks:
     - name: "Install basic deps needed for install"
@@ -103,7 +105,6 @@
     - name: "Install the kitchen sink"
       apt:
         name: [
-          "awscli",
           "autoconf",
           "build-essential",
           "ctags",
@@ -211,6 +212,12 @@
         chdir: "/opt/src/mosh"
       register: mosh_make_install
       when: mosh_make.changed or mosh_binary_file.stat.exists == False
+
+    - name: "Install aws cli"
+      unarchive:
+        src: "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip"
+        dest: /usr/local/bin
+        remote_src: yes
 
     - name: "Install Vault"
       unarchive:
