@@ -16,4 +16,5 @@ if ! command -v ansible >/dev/null 2>&1; then
 fi
 
 # run ansible playbook
+ansible-galaxy install deekayen.awscli2
 ~/.local/bin/ansible-playbook ${SCRIPTDIR}/ubuntu.yml --ask-become-pass

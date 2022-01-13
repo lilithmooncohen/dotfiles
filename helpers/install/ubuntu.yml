@@ -213,12 +213,6 @@
       register: mosh_make_install
       when: mosh_make.changed or mosh_binary_file.stat.exists == False
 
-    - name: "Install aws cli"
-      unarchive:
-        src: "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip"
-        dest: /usr/local/bin
-        remote_src: yes
-
     - name: "Install Vault"
       unarchive:
         src: "https://releases.hashicorp.com/vault/1.6.1/vault_1.6.1_linux_amd64.zip"
