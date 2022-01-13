@@ -1,0 +1,9 @@
+[user]
+name = Lily Cohen
+email = lilithmooncohen@gmail.com
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[url "ssh://git@gitlab.com/"]
+  insteadOf = https://gitlab.com/
+[url "git@bitbucket.org/"]
+  insteadOf = https://bitbucket.org/
