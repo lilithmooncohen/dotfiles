@@ -36,7 +36,7 @@
 
     - name: "Add node apt repo"
       apt_repository:
-        repo: "deb https://dl.yarnpkg.com/debian stable main"
+        repo: "deb https://deb.nodesource.com/node_16.x stable main"
         state: "present"
 
     - name: "Add yarn apt key"
