@@ -82,7 +82,7 @@ ln -s ~/.dotfiles/config/tmux ~/.tmux
 ln -s ~/.dotfiles/config/tmux/tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/config/shell/.profile ~/.profile
 ln -s ~/.dotfiles/config/shell/.zshrc ~/.zshrc
-ln -s ~/.dotfiles/config/bash/.bashrc ~/.bashrc
+ln -s ~/.dotfiles/config/shell/.bashrc ~/.bashrc
 ln -s ~/.dotfiles/src/github/robbyrussell/oh-my-zsh ~/.oh-my-zsh
 ln -s ~/.dotfiles/src/github/SpaceVim/SpaceVim ~/.SpaceVim
 ln -s ~/.dotfiles/src/github/SpaceVim/SpaceVim ~/.vim
