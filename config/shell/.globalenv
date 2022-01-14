@@ -41,5 +41,5 @@ fi
 
 if command -v go >/dev/null 2>&1; then
     GOPATH="$(go env GOPATH)"
-    GOBIN="$(go env GOBIN)"
+    GOBIN="${GOPATH}/bin"
 fi
