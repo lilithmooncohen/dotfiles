@@ -18,8 +18,6 @@ DOTFILES_BIN="${DOTFILES_BIN:=$DOTFILES_PATH/src/local/bin}"
 CARGO_HOME="${CARGO_HOME:=$HOME/.cargo}"
 RUSTUP_HOME="${RUSTUP_HOME:=$HOME/.cargo}"
 CARGO_BIN="${CARGO_BIN:=$CARGO_HOME/bin}"
-GOPATH="${GOPATH:=$HOME/go}"
-GOBIN="${GOBIN:=$GOPATH/bin}"
 YARN_HOME="${YARN_HOME:=$HOME/.yarn}"
 YARN_BIN="${YARN_BIN:=$YARN_HOME/bin}"
 RVM_HOME="${RVM_HOME:=$HOME/.rvm}"
@@ -39,4 +37,9 @@ fi
 if command -v python3 >/dev/null 2>&1; then
     PYTHON3_HOME="${PYTHON3_HOME:=$(python3 -m site --user-base)}"
     PYTHON3_BIN="${PYTHON3_BIN:=$PYTHON3_HOME/bin}"
+fi
+
+if command -v go >/dev/null 2>&1; then
+    GOPATH="$(go env GOPATH)"
+    GOBIN="$(go env GOBIN)"
 fi

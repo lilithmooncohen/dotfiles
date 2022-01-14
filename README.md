@@ -77,8 +77,10 @@ mkdir -p ~/.cache/vimfiles/repos/github.com/Shougo
 mkdir -p ~/.config/Code/User
 mkdir -p ~/Library/Application\ Support/Code
 mkdir -p ~/.code-server/User
+mkdir -p "$(dirname "$(go env GOENV)")"
 ln -s ~/.dotfiles/src/github/Shougo/dein.vim ~/.cache/vimfiles/repos/github.com/Shougo/dein.vim
 ln -s ~/.dotfiles/config/git/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/config/go/env "$(go env GOENV)"
 ln -s ~/.dotfiles/config/tmux ~/.tmux
 ln -s ~/.dotfiles/config/tmux/tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/config/shell/.profile ~/.profile
