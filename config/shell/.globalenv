@@ -29,6 +29,8 @@ SNAP_BIN="${SNAP_BIN:=$SNAP_HOME/bin}"
 HELMENV_BIN="${HELMENV_BIN:=$DOTFILES_PATH/src/github/yuya-takeyama/helmenv/bin}"
 TFENV_BIN="${TFENV_BIN:=$DOTFILES_PATH/src/github/tfutils/tfenv/bin}"
 
+if command -v brew >/dev/null 2>&1; then eval "$(brew shellenv)"; fi
+
 if command -v python2 >/dev/null 2>&1; then
     PYTHON2_HOME="${PYTHON2_HOME:=$(python2 -m site --user-base)}"
     PYTHON2_BIN="${PYTHON2_BIN:=$PYTHON2_HOME/bin}"
@@ -38,5 +40,3 @@ if command -v python3 >/dev/null 2>&1; then
     PYTHON3_HOME="${PYTHON3_HOME:=$(python3 -m site --user-base)}"
     PYTHON3_BIN="${PYTHON3_BIN:=$PYTHON3_HOME/bin}"
 fi
-
-if [ -f "/opt/homebrew/bin/brew" ]; then eval "$(/opt/homebrew/bin/brew shellenv)"; fi

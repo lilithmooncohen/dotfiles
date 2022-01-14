@@ -47,6 +47,7 @@ pip3 install \
   websocket-client \
   sexpdata \
   python-language-server
+
 ```
 
 ## Initialize Dotfiles
@@ -99,6 +100,8 @@ ln -s ~/.dotfiles/config/vscode/settings.json ~/.code-server/User/settings.json
 ln -s ~/.dotfiles/config/vscode/keybindings.json ~/.code-server/User/keybindings.json
 ln -s ~/.dotfiles/config/vscode/snippets ~/.code-server/User/
 ln -s ~/.dotfiles/config/terminator/config ~/.config/terminator/config
+
+source ~/.profile
 
 # Change default shell
 chsh -s /bin/zsh
