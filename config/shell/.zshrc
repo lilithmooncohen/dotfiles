@@ -27,4 +27,12 @@ prompt_dir() {
     prompt_segment blue black "`basename ${PWD##*/}`"
 }
 
+# asdf autocomplete
+if [ -d "${ASDF_DIR}" ]; then
+  # append completions to fpath
+  fpath=(${ASDF_DIR}/completions $fpath)
+  # initialise completions with ZSH's compinit
+  autoload -Uz compinit && compinit
+fi
+
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi

@@ -74,4 +74,7 @@ xterm*|rxvt*)
     ;;
 esac
 
+# asdf autocomplete
+if [ -d "${ASDF_DIR}" ]; then . $ASDF_DIR/completions/asdf.bash; fi
+
 if [ -f "$HOME/google-cloud-sdk/completion.bash.inc" ]; then . "$HOME/google-cloud-sdk/completion.bash.inc"; fi

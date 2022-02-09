@@ -1,0 +1,4 @@
+kubectl 1.21.1
+helm 3.6.3
+terraform 1.1.5
+kubectx latest
