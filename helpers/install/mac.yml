@@ -72,3 +72,7 @@
       homebrew:
         name: "ffmpeg"
         state: present
+    - name: install kind
+      homebrew:
+        name: "kind"
+        state: present
