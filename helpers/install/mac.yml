@@ -8,10 +8,6 @@
       homebrew:
         name: "watch"
         state: present
-    - name: install go
-      homebrew:
-        name: "go"
-        state: present
     - name: install node
       homebrew:
         name: "node"
@@ -35,10 +31,6 @@
     - name: install tmux
       homebrew:
         name: "tmux"
-        state: present
-    - name: install kubectx
-      homebrew:
-        name: "kubectx"
         state: present
     - name: install gh
       homebrew:
@@ -75,4 +67,8 @@
     - name: install kind
       homebrew:
         name: "kind"
+        state: present
+    - name: install dep
+      homebrew:
+        name: "dep"
         state: present

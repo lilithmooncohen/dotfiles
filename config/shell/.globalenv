@@ -27,6 +27,7 @@ SNAP_BIN="${SNAP_BIN:=$SNAP_HOME/bin}"
 HELMENV_BIN="${HELMENV_BIN:=$DOTFILES_PATH/src/github/yuya-takeyama/helmenv/bin}"
 TFENV_BIN="${TFENV_BIN:=$DOTFILES_PATH/src/github/tfutils/tfenv/bin}"
 ASDF_DIR="${ASDF_DIR:=$DOTFILES_PATH/src/github/asdf-vm/asdf}"
+GIT_ROOT_DIR="${GIT_ROOT_DIR:=$HOME/git}"
 
 if [ -d "${ASDF_DIR}" ]; then . "${ASDF_DIR}/asdf.sh"; fi
 

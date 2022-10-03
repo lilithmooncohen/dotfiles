@@ -22,7 +22,6 @@
     "terminal.external.linuxExec": "xterm-256color",
     "terminal.integrated.fontFamily": "monospace",
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.shell.osx": "/bin/zsh",
     "editor.fontSize": 14,
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": true,
@@ -64,12 +63,6 @@
         "exclude": [
             ".terraform/**/*",
             "**/.terraform/**/*"
-        ]
-    },
-    "terraform.languageServer": {
-        "external": true,
-        "args": [
-            "serve"
         ]
     },
     "workbench.editor.enablePreview": false,
@@ -181,5 +174,17 @@
         "yaml": false,
         "plaintext": true,
         "markdown": false
-    }
+    },
+    "trunk.trunkGrayOutNonBlockingIssues": false,
+    "go.toolsManagement.autoUpdate": true,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.scrollback": 10000,
+    "terminal.external.osxExec": "iTerm.app",
+    "files.exclude": {
+        "**/.trunk/*out": true
+    },
+    "files.watcherExclude": {
+        "**/.trunk/*out": true
+    },
+    "terraform.languageServer.enable": true
 }
