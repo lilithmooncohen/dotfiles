@@ -22,3 +22,6 @@
 [submodule "src/github/syl20bnr/spacemacs"]
 	path = src/github/syl20bnr/spacemacs
 	url = https://github.com/syl20bnr/spacemacs.git
+[submodule "src/github/asdf-vm/asdf"]
+	path = src/github/asdf-vm/asdf
+	url = https://github.com/asdf-vm/asdf.git
