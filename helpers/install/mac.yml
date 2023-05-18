@@ -32,10 +32,10 @@
       homebrew:
         name: "tmux"
         state: present
-    - name: install google-cloud-sdk
-      homebrew:
-        name: "google-cloud-sdk"
-        state: present
+    # - name: install google-cloud-sdk
+    #   homebrew:
+    #     name: "google-cloud-sdk"
+    #     state: present
     - name: install 1password-cli
       homebrew:
         name: "1password-cli"
