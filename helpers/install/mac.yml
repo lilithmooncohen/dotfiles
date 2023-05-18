@@ -36,10 +36,10 @@
     #   homebrew:
     #     name: "google-cloud-sdk"
     #     state: present
-    - name: install 1password-cli
-      homebrew:
-        name: "1password-cli"
-        state: present
+    # - name: install 1password-cli
+    #   homebrew:
+    #     name: "1password-cli"
+    #     state: present
     - name: install ffmpeg
       homebrew:
         name: "ffmpeg"
