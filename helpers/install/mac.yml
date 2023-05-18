@@ -1,6 +1,4 @@
 - hosts: localhost
-  roles:
-    - cimon-io.asdf
   tasks:
     - name: add emacs tap
       homebrew_tap:
