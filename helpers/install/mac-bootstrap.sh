@@ -15,7 +15,7 @@ fi
 
 # install ansible-playboook if not installed
 if ! command -v ansible-playbook >/dev/null 2>&1; then
-    asdf plugin add github.com/danhper/asdf-python.git
+    asdf plugin add github.com/danhper/asdf-python.git || true
     asdf install python
     source ~/.profile
     pip install ansible
