@@ -7,3 +7,5 @@ email = lilithmooncohen@gmail.com
   insteadOf = https://gitlab.com/
 [url "git@bitbucket.org/"]
   insteadOf = https://bitbucket.org/
+[pull]
+	rebase = false

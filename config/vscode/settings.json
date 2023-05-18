@@ -171,7 +171,7 @@
     "editor.inlineSuggest.enabled": true,
     "github.copilot.enable": {
         "*": true,
-        "yaml": false,
+        "yaml": true,
         "plaintext": true,
         "markdown": false
     },
@@ -181,10 +181,18 @@
     "terminal.integrated.scrollback": 10000,
     "terminal.external.osxExec": "iTerm.app",
     "files.exclude": {
-        "**/.trunk/*out": true
+        "**/.trunk/*out": true,
+        "**/.trunk/*out/": true,
+        "**/.trunk/*actions/": true,
+        "**/.trunk/*logs/": true,
+        "**/.trunk/*plugins/": true
     },
     "files.watcherExclude": {
-        "**/.trunk/*out": true
+        "**/.trunk/*out": true,
+        "**/.trunk/*out/": true,
+        "**/.trunk/*actions/": true,
+        "**/.trunk/*logs/": true,
+        "**/.trunk/*plugins/": true
     },
     "terraform.languageServer.enable": true
 }

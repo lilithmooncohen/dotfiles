@@ -7,11 +7,23 @@ These are my dotfiles for setting up my development environment. I use them to c
 git clone --recursive https://github.com/lilithmooncohen/dotfiles.git ~/.dotfiles
 ```
 
-## Install rust, upgrade pip, and install ansible
+## Setup shell and install Ansible
+```
+ln -s ~/.dotfiles/config/shell/.profile ~/.profile
+ln -s ~/.dotfiles/config/shell/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/config/shell/.bashrc ~/.bashrc
+ln -s ~/.dotfiles/config/asdf/.tool-versions ~/.tool-versions
+source ~/.profile
+asdf plugin add github.com/danhper/asdf-python.git
+asdf install python
+source ~/.profile
+pip install ansible
+source ~/.profile
+```
+
+## Install rust
 ```
 curl https://sh.rustup.rs -sSf | sh -s -- -y
-pip install --upgrade pip
-pip install ansible
 ```
 
 ## OS Specific Prep
@@ -26,7 +38,7 @@ pip install ansible
 ~/.dotfiles/helpers/install/ubuntu-bootstrap.sh
 ```
 
-## Install dependencies
+## install dependencies
 ```
 yarn global add \
   bash-language-server \
@@ -47,18 +59,14 @@ pip3 install \
   websocket-client \
   sexpdata \
   python-language-server
-
 ```
 
 ## Initialize Dotfiles
 ### If any of the following exist, back them up and remove them
 ```
-.dotfiles/
 .config/terminator/config
 .gitconfig
 .oh_my_zsh/
-.profile
-.bashrc
 .SpaceVim/
 .SpaceVim.d/
 .tmux/
@@ -66,7 +74,6 @@ pip3 install \
 .vim/
 .vimrc
 .vimrc_background
-.zshrc
 ```
 
 ### Install dotfiles
@@ -83,9 +90,6 @@ ln -s ~/.dotfiles/config/git/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/config/go/env "$(go env GOENV)"
 ln -s ~/.dotfiles/config/tmux ~/.tmux
 ln -s ~/.dotfiles/config/tmux/tmux.conf ~/.tmux.conf
-ln -s ~/.dotfiles/config/shell/.profile ~/.profile
-ln -s ~/.dotfiles/config/shell/.zshrc ~/.zshrc
-ln -s ~/.dotfiles/config/shell/.bashrc ~/.bashrc
 ln -s ~/.dotfiles/config/asdf/.tool-versions ~/.tool-versions
 ln -s ~/.dotfiles/src/github/robbyrussell/oh-my-zsh ~/.oh-my-zsh
 ln -s ~/.dotfiles/src/github/SpaceVim/SpaceVim ~/.SpaceVim

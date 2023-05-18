@@ -12,6 +12,7 @@ LC_NAME="en_US.UTF-8"
 LC_ADDRESS="en_US.UTF-8"
 LC_TELEPHONE="en_US.UTF-8"
 LC_MEASUREMENT="en_US.UTF-8"
+KERL_BUILD_DOCS=yes
 
 HOSTNAME="${HOSTNAME:=$(hostname)}"
 DOTFILES_BIN="${DOTFILES_BIN:=$DOTFILES_PATH/src/local/bin}"
@@ -33,17 +34,26 @@ if [ -d "${ASDF_DIR}" ]; then . "${ASDF_DIR}/asdf.sh"; fi
 
 if [ -x "/opt/homebrew/bin/brew" ]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
+    KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac --with-ssl=$(/opt/homebrew/bin/brew --prefix openssl@1.1)"
 elif [ -x "/usr/local/bin/brew" ]; then
     eval "$(/usr/local/bin/brew shellenv)"
+    KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac --with-ssl=$(/usr/local/bin/brew --prefix openssl@1.1)"
+else
+    KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
 fi
 
-if command -v python2 >/dev/null 2>&1; then
-    PYTHON2_HOME="${PYTHON2_HOME:=$(python2 -m site --user-base)}"
-    PYTHON2_BIN="${PYTHON2_BIN:=$PYTHON2_HOME/bin}"
-fi
+# if command -v python2 >/dev/null 2>&1; then
+#     PYTHON2_HOME="${PYTHON2_HOME:=$(python2 -m site --user-base)}"
+#     PYTHON2_BIN="${PYTHON2_BIN:=$PYTHON2_HOME/bin}"
+# fi
 
-if command -v python3 >/dev/null 2>&1; then
-    PYTHON3_HOME="${PYTHON3_HOME:=$(python3 -m site --user-base)}"
+# if command -v python3 >/dev/null 2>&1; then
+#     PYTHON3_HOME="${PYTHON3_HOME:=$(python3 -m site --user-base)}"
+#     PYTHON3_BIN="${PYTHON3_BIN:=$PYTHON3_HOME/bin}"
+# fi
+
+if [ -f "${HOME}.asdf/shims/python" ] 2>&1; then
+    PYTHON3_HOME="${PYTHON3_HOME:=$(${HOME}.asdf/shims/python -m site --user-base)}"
     PYTHON3_BIN="${PYTHON3_BIN:=$PYTHON3_HOME/bin}"
 fi
 

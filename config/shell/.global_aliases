@@ -13,5 +13,8 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias python=$(which python3)
-alias pip=$(which pip3)
+
+alias python="${HOME}/.asdf/shims/python"
+alias pip="${HOME}/.asdf/shims/pip"
+alias python3="${HOME}/.asdf/shims/python"
+alias pip3="${HOME}/.asdf/shims/pip"
