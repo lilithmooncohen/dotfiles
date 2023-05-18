@@ -192,15 +192,15 @@ default_height = 15
 [[layers]]
   name = "lang#vue"
 
-[[layers]]
-  name = "lsp"
-  filetypes = [
-    "dockerfile",
-    "go",
-    "javascript",
-    "python",
-    "rust"
-  ]
+# [[layers]]
+#   name = "lsp"
+#   filetypes = [
+#     "dockerfile",
+#     "go",
+#     "javascript",
+#     "python",
+#     "rust"
+#   ]
 
 [[layers]]
   name = "leaderf"
