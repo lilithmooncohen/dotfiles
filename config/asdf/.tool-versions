@@ -30,3 +30,5 @@ mc 2023-03-23T20-03-04Z
 dyff 1.5.6
 pre-commit 3.2.2
 helm-docs 1.11.0
+github-cli 2.29.0
+kind 0.19.0

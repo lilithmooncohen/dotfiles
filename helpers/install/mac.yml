@@ -32,10 +32,6 @@
       homebrew:
         name: "tmux"
         state: present
-    - name: install gh
-      homebrew:
-        name: "gh"
-        state: present
     - name: install google-cloud-sdk
       homebrew:
         name: "google-cloud-sdk"
@@ -47,10 +43,6 @@
     - name: install ffmpeg
       homebrew:
         name: "ffmpeg"
-        state: present
-    - name: install kind
-      homebrew:
-        name: "kind"
         state: present
     - name: install dep
       homebrew:
