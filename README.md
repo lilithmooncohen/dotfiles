@@ -14,16 +14,6 @@ ln -s ~/.dotfiles/config/shell/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/config/shell/.bashrc ~/.bashrc
 ln -s ~/.dotfiles/config/asdf/.tool-versions ~/.tool-versions
 source ~/.profile
-asdf plugin add github.com/danhper/asdf-python.git
-asdf install python
-source ~/.profile
-pip install ansible
-source ~/.profile
-```
-
-## Install rust
-```
-curl https://sh.rustup.rs -sSf | sh -s -- -y
 ```
 
 ## OS Specific Prep
@@ -38,7 +28,12 @@ curl https://sh.rustup.rs -sSf | sh -s -- -y
 ~/.dotfiles/helpers/install/ubuntu-bootstrap.sh
 ```
 
-## install dependencies
+## Install rust
+```
+curl https://sh.rustup.rs -sSf | sh -s -- -y
+```
+
+## install vim dependencies
 ```
 yarn global add \
   bash-language-server \

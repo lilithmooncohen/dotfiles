@@ -1,9 +1,9 @@
 - hosts: localhost
   tasks:
-    - name: add emacs tap
-      homebrew_tap:
-        name: "d12frosted/emacs-plus"
-        state: present
+    # - name: add emacs tap
+    #   homebrew_tap:
+    #     name: "d12frosted/emacs-plus"
+    #     state: present
     - name: install watch
       homebrew:
         name: "watch"
@@ -24,10 +24,10 @@
     #   homebrew:
     #     name: "neovim"
     #     state: present
-    - name: install emacs-plus
-      homebrew:
-        name: "emacs-plus"
-        state: present
+    # - name: install emacs-plus
+    #   homebrew:
+    #     name: "emacs-plus"
+    #     state: present
     - name: install tmux
       homebrew:
         name: "tmux"
