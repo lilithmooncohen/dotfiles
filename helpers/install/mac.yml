@@ -1,54 +1,20 @@
 - hosts: localhost
   tasks:
-    # - name: add emacs tap
-    #   homebrew_tap:
-    #     name: "d12frosted/emacs-plus"
-    #     state: present
+    # install system tools
+    - name: install htop
+      homebrew:
+        name: "htop"
+        state: present
     - name: install watch
       homebrew:
         name: "watch"
         state: present
-    - name: install node
+    # golang deps
+    - name: install coreutils
       homebrew:
-        name: "node"
+        name: "coreutils"
         state: present
-    - name: install yarn
-      homebrew:
-        name: "yarn"
-        state: present
-    # - name: install vim
-    #   homebrew:
-    #     name: "vim"
-    #     state: present
-    # - name: install neovim
-    #   homebrew:
-    #     name: "neovim"
-    #     state: present
-    # - name: install emacs-plus
-    #   homebrew:
-    #     name: "emacs-plus"
-    #     state: present
-    - name: install tmux
-      homebrew:
-        name: "tmux"
-        state: present
-    # - name: install google-cloud-sdk
-    #   homebrew:
-    #     name: "google-cloud-sdk"
-    #     state: present
-    # - name: install 1password-cli
-    #   homebrew:
-    #     name: "1password-cli"
-    #     state: present
-    - name: install ffmpeg
-      homebrew:
-        name: "ffmpeg"
-        state: present
-    - name: install dep
-      homebrew:
-        name: "dep"
-        state: present
-    # Erlang & Elixir
+    # erlang deps
     - name: install autoconf
       homebrew:
         name: "autoconf"
@@ -69,3 +35,16 @@
       homebrew:
         name: "fop"
         state: present
+    # ruby deps
+    - name: install openssl@1.1
+      homebrew:
+        name: "openssl@1.1"
+    - name: install readline
+      homebrew:
+        name: "readline"
+    - name: install libyaml
+      homebrew:
+        name: "libyaml"
+    - name: install gmp
+      homebrew:
+        name: "gmp"
