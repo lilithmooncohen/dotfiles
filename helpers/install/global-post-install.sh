@@ -29,4 +29,5 @@ pip install \
 
 # krew plugins
 krew install \
+  pod-lens \
   sniff
