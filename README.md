@@ -11,11 +11,13 @@ git clone --recursive https://github.com/lilithmooncohen/dotfiles.git ~/.dotfile
 ### Mac
 ```shell
 ~/.dotfiles/helpers/install/mac-bootstrap.sh
+source ~/.profile
 ```
 
 ### Debian / Ubuntu
 ```shell
 ~/.dotfiles/helpers/install/ubuntu-bootstrap.sh
+source ~/.profile
 ```
 
 ## Change default shell
