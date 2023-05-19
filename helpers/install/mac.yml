@@ -9,6 +9,11 @@
       homebrew:
         name: "watch"
         state: present
+    # tmux deps
+    - name: install utf8proc
+      homebrew:
+        name: "utf8proc"
+        state: present
     # golang deps
     - name: install coreutils
       homebrew:

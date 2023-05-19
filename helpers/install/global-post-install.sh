@@ -26,3 +26,7 @@ pip install \
   websocket-client \
   sexpdata \
   python-language-server
+
+# krew plugins
+krew install \
+  sniff
