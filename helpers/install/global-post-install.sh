@@ -29,5 +29,6 @@ pip install \
 
 # krew plugins
 krew install \
+  node-admin \
   pod-lens \
   sniff
