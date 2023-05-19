@@ -5,6 +5,10 @@
       homebrew:
         name: "htop"
         state: present
+    - name: install tmux
+      homebrew:
+        name: "tmux"
+        state: present
     - name: install watch
       homebrew:
         name: "watch"

@@ -38,7 +38,6 @@ terraform-docs               ssh://git@github.com/looztra/asdf-terraform-docs.gi
 terraform                    ssh://git@github.com/asdf-community/asdf-hashicorp.git
 terragrunt                   ssh://git@github.com/ohmer/asdf-terragrunt.git
 tfupdate                     ssh://git@github.com/yuokada/asdf-tfupdate.git
-tmux                         ssh://git@github.com/aphecetche/asdf-tmux.git
 velero                       ssh://git@github.com/looztra/asdf-velero
 vim                          ssh://git@github.com/tsuyoshicho/asdf-vim.git
 yq                           ssh://git@github.com/sudermanjr/asdf-yq.git

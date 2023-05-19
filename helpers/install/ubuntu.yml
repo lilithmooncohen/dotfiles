@@ -6,6 +6,7 @@
         name:
           - locales
           - software-properties-common
+          - tmux
           - zsh
         state: "present"
 

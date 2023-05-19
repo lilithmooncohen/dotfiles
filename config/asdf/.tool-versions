@@ -31,7 +31,6 @@ sops 3.7.3
 terraform 1.4.6
 terraform-docs 0.16.0
 terragrunt 0.45.14
-tmux 3.3a
 tfupdate 0.6.7
 velero 1.11.0
 vim 9.0.1568
