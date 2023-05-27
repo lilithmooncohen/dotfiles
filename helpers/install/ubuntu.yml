@@ -8,6 +8,7 @@
           - software-properties-common
           - tmux
           - zsh
+          - emacs
         state: "present"
 
     - name: "Ensure locale exists"
