@@ -222,7 +222,8 @@ default_height = 15
 
 [[layers]]
   name = "ui"
-[[custom_plugins]]
-  name = "dracula/vim"
-  merged = 0
+
+ [[custom_plugins]]
+   name = "dracula/vim"
+   merged = 0
 

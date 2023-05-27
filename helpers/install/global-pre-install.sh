@@ -28,6 +28,7 @@ ln -sfn ~/.dotfiles/src/github/SpaceVim/SpaceVim ~/.vim
 ln -sfn ~/.dotfiles/src/github/syl20bnr/spacemacs ~/.emacs.d
 ln -sfn ~/.dotfiles/config/spacemacs/.spacemacs ~/.spacemacs
 ln -sfn ~/.dotfiles/config/base16/vim/.vimrc_background ~/.vimrc_background
+ln -sfn ~/.dotfiles/src/github/chriskempson/base16-shell ~/.config/base16-shell
 ln -sfn ~/.dotfiles/src/github/SpaceVim/SpaceVim ~/.config/nvim
 ln -sfn ~/.dotfiles/config/spacevim/ ~/.SpaceVim.d
 ln -sfn ~/.dotfiles/config/vscode/settings.json ~/.config/Code/User/settings.json

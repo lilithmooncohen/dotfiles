@@ -25,3 +25,6 @@
 [submodule "src/github/asdf-vm/asdf"]
 	path = src/github/asdf-vm/asdf
 	url = https://github.com/asdf-vm/asdf.git
+[submodule "src/github/tinted-theming/base16-tmux"]
+	path = src/github/tinted-theming/base16-tmux
+	url = https://github.com/tinted-theming/base16-tmux.git

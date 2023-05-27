@@ -1,3 +1,9 @@
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        source "$BASE16_SHELL/profile_helper.sh"
+
 # set PATH so it includes dotfiles bin if it exists
 if [ -d "$DOTFILES_BIN" ]; then PATH="$DOTFILES_BIN:$PATH"; fi
 
