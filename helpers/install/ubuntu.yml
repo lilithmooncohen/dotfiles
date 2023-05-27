@@ -124,3 +124,19 @@
         update_cache: "yes"
         install_recommends: "yes"
         state: "present"
+
+    - name: "Install mosh dependencies"
+      apt:
+        name:
+          - autoconf
+          - build-essential
+          - perl
+          - protobuf-compiler
+          - libprotobuf-dev
+          - libncurses5-dev
+          - zlib1g-dev
+          - libutempter-dev
+          - libssl-dev
+        update_cache: "yes"
+        install_recommends: "yes"
+        state: "present"
