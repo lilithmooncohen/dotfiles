@@ -30,6 +30,7 @@ pack                         ssh://git@github.com/johnlayton/asdf-buildpack.git
 pluto                        ssh://git@github.com/FairwindsOps/asdf-pluto.git
 pre-commit                   ssh://git@github.com/jonathanmorley/asdf-pre-commit.git
 python                       ssh://git@github.com/danhper/asdf-python.git
+redis                        ssh://git@github.com/smashedtoatoms/asdf-redis.git
 ruby                         ssh://git@github.com/asdf-vm/asdf-ruby.git
 rust                         ssh://git@github.com/code-lever/asdf-rust.git
 sops                         ssh://git@github.com/feniix/asdf-sops.git
