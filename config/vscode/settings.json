@@ -194,5 +194,6 @@
         "**/.trunk/*logs/": true,
         "**/.trunk/*plugins/": true
     },
-    "terraform.languageServer.enable": true
+    "terraform.languageServer.enable": true,
+    "editor.renderWhitespace": "all"
 }

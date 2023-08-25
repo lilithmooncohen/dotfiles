@@ -35,3 +35,4 @@ tfupdate 0.6.7
 velero 1.11.0
 vim 9.0.1568
 yq 4.33.3
+redis 7.0.11
