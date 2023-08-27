@@ -20,7 +20,7 @@ kubectx 0.9.4
 kustomize 5.0.3
 mc 2023-03-23T20-03-04Z
 neovim 0.9.0
-nodejs 20.2.0
+#nodejs 20.2.0
 pack 0.29.0
 pluto 5.16.3
 pre-commit 3.3.2
