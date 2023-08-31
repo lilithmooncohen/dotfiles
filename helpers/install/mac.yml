@@ -57,3 +57,6 @@
     - name: install gmp
       homebrew:
         name: "gmp"
+    - name: install mas
+      homebrew:
+        name: "mas"
