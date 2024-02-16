@@ -52,12 +52,18 @@ fi
 #     PYTHON3_BIN="${PYTHON3_BIN:=$PYTHON3_HOME/bin}"
 # fi
 
-if [ -f "${HOME}.asdf/shims/python" ] 2>&1; then
-    PYTHON3_HOME="${PYTHON3_HOME:=$(${HOME}.asdf/shims/python -m site --user-base)}"
+if [ -f "${HOME}/.asdf/shims/python" ] 2>&1; then
+    PYTHON3_HOME="${PYTHON3_HOME:=$(${HOME}/.asdf/shims/python -m site --user-base)}"
     PYTHON3_BIN="${PYTHON3_BIN:=$PYTHON3_HOME/bin}"
 fi
 
 if command -v go >/dev/null 2>&1; then
     GOPATH="$(go env GOPATH)"
     GOBIN="${GOPATH}/bin"
+fi
+
+if command -v gcloud >/dev/null 2>&1; then
+    GCLOUD_PATH="$(asdf where gcloud)"
+    GCLOUD_BIN="${GCLOUD_PATH}/bin"
+    echo $GCOULD_BIN
 fi
