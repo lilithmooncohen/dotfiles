@@ -1,4 +1,6 @@
+1password-cli                ssh://git@github.com/NeoHsu/asdf-1password-cli.git
 argocd                       ssh://git@github.com/beardix/asdf-argocd.git
+asdf-yamlfmt                 ssh://git@github.com/kachick/asdf-yamlfmt.git
 awscli                       ssh://git@github.com/MetricMike/asdf-awscli.git
 cookiecutter                 ssh://git@github.com/shawon-crosen/asdf-cookiecutter.git
 crossplane-cli               ssh://git@github.com/joke/asdf-crossplance-cli.git
@@ -7,6 +9,7 @@ elixir                       ssh://git@github.com/asdf-vm/asdf-elixir.git
 erlang                       ssh://git@github.com/asdf-vm/asdf-erlang.git
 flux2                        ssh://git@github.com/tablexi/asdf-flux2.git
 fzf                          ssh://git@github.com/kompiro/asdf-fzf.git
+gcloud                       ssh://git@github.com/jthegedus/asdf-gcloud
 github-cli                   ssh://git@github.com/bartlomiejdanek/asdf-github-cli.git
 golang                       ssh://git@github.com/kennyp/asdf-golang.git
 helm-diff                    ssh://git@github.com/dex4er/asdf-helm-diff.git
@@ -16,6 +19,7 @@ helm-secrets                 ssh://git@github.com/istreamlabs/asdf-helm-secrets.
 helm                         ssh://git@github.com/Antiarchitect/asdf-helm.git
 helmfile                     ssh://git@github.com/feniix/asdf-helmfile.git
 jq                           ssh://git@github.com/AZMCode/asdf-jq.git
+just                         ssh://git@github.com/olofvndrhr/asdf-just.git
 k3d                          ssh://git@github.com/spencergilbert/asdf-k3d.git
 k9s                          ssh://git@github.com/looztra/asdf-k9s.git
 kind                         ssh://git@github.com/johnlayton/asdf-kind.git
@@ -39,6 +43,8 @@ terraform-docs               ssh://git@github.com/looztra/asdf-terraform-docs.gi
 terraform                    ssh://git@github.com/asdf-community/asdf-hashicorp.git
 terragrunt                   ssh://git@github.com/ohmer/asdf-terragrunt.git
 tfupdate                     ssh://git@github.com/yuokada/asdf-tfupdate.git
+vault                        ssh://git@github.com/asdf-community/asdf-hashicorp.git
 velero                       ssh://git@github.com/looztra/asdf-velero
 vim                          ssh://git@github.com/tsuyoshicho/asdf-vim.git
+yarn                         ssh://git@github.com/twuni/asdf-yarn.git
 yq                           ssh://git@github.com/sudermanjr/asdf-yq.git

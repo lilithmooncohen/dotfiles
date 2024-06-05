@@ -195,5 +195,6 @@
         "**/.trunk/*plugins/": true
     },
     "terraform.languageServer.enable": true,
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "github.copilot.editor.enableAutoCompletions": true
 }

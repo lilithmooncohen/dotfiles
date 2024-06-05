@@ -1,7 +1,7 @@
 argocd 2.7.2
 awscli 2.13.22
 crossplane-cli 1.10.0
-dyff 1.5.7
+dyff 1.7.1
 elixir 1.16.1-otp-26
 erlang 26.2.2
 flux2 0.41.2
@@ -13,7 +13,7 @@ helm 3.12.0
 helm-docs 1.11.0
 jq 1.6
 k3d 5.5.1
-k9s 0.27.4
+k9s 0.32.4
 kind 0.19.0
 krew 0.4.3
 kubectl 1.28.2
@@ -30,7 +30,7 @@ redis 7.0.11
 ruby 3.0.4
 rust 1.69.0
 sops 3.8.0
-terraform 1.5.7
+terraform 1.7.5
 terraform-docs 0.16.0
 terragrunt 0.45.14
 tfupdate 0.7.2
@@ -38,3 +38,4 @@ vault 1.15.2
 velero 1.12.2
 vim 9.0.1568
 yq 4.33.3
+asdf-yamlfmt 0.11.0
