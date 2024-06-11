@@ -14,6 +14,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias vi='nvim'
+alias vim='nvim'
 alias python="${HOME}/.asdf/shims/python"
 alias pip="${HOME}/.asdf/shims/pip"
 alias python3="${HOME}/.asdf/shims/python"
