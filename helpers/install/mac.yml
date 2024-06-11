@@ -13,6 +13,10 @@
       homebrew:
         name: "watch"
         state: present
+    - name: install fonts
+      homebrew:
+        name: "font-hack-nerd-font"
+        state: present
     # tmux deps
     - name: install utf8proc
       homebrew:

@@ -14,20 +14,22 @@
     colorscheme = "dracula"
     colorscheme_bg = "dark"
     background = "dark"
+    filetree_direction = "left"
+    # guifont = "FuraCode Nerd Font:h14"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
     enable_guicolors = true
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
-    statusline_separator = "arrow"
-    statusline_inactive_separator = "arrow"
-    buffer_index_type = 4
-    enable_tabline_filetype_icon = false
-    enable_statusline_display_mode = false
+    # statusline_separator = "arrow"
+    # statusline_inactive_separator = "arrow"
+    # buffer_index_type = 4
+    # enable_tabline_filetype_icon = false
+    # enable_statusline_display_mode = false
     enable_vimfiler_gitstatus = true
     relativenumber = false
-    bootstrap_before = "customconfig#before"
-    bootstrap_after = "customconfig#after"
+    # bootstrap_before = "customconfig#before"
+    # bootstrap_after = "customconfig#after"
     custom_color_palette = [
       ['#2c323c', '#98c379', 114, 16],
       ['#abb2bf', '#3b4048', 16, 145],
@@ -44,7 +46,7 @@
 [[layers]]
 name = 'autocomplete'
 auto-completion-return-key-behavior = "nil"
-auto-completion-return-key-behavior = "complete"
+# auto-completion-return-key-behavior = "complete"
 auto-completion-tab-key-behavior = "smart"
 #auto-completion-complete-with-key-sequence = "jk"
 auto-completion-complete-with-key-sequence-delay = 0.1
@@ -222,8 +224,3 @@ default_height = 15
 
 [[layers]]
   name = "ui"
-
- [[custom_plugins]]
-   name = "dracula/vim"
-   merged = 0
-
