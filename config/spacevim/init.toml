@@ -15,7 +15,7 @@
     colorscheme_bg = "dark"
     background = "dark"
     filetree_direction = "left"
-    # guifont = "FuraCode Nerd Font:h14"
+    guifont = "FuraCode Nerd Font:h14"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
     enable_guicolors = true

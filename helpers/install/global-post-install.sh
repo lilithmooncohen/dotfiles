@@ -7,16 +7,17 @@ mkdir -p "$(dirname "$(go env GOENV)")"
 ln -sfn ~/.dotfiles/config/go/env "$(go env GOENV)"
 
 # vim lsp dependencies
-#npm install -g \
-#  bash-language-server \
-#  dockerfile-language-server-nodejs \
+npm install -g \
+ bash-language-server \
+ dockerfile-language-server-nodejs \
+ yaml-language-server
 #  eslint-cli \
 #  import-js \
 #  typescript-language-server \
 #  neovim \
 #  tern \
 #  typescript \
-#  vmd
+#  vmd \
 
 go install golang.org/x/tools/gopls@latest
 

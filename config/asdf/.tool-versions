@@ -1,6 +1,7 @@
 argocd 2.11.3
 awscli 2.16.6
 crossplane-cli 1.9.2
+delta 0.17.0
 dyff 1.8.0
 elixir 1.16.1-otp-26
 erlang 26.2.2
@@ -29,9 +30,11 @@ python 3.11.3
 redis 7.2.5
 ruby 3.0.4
 rust 1.69.0
+shfmt 3.8.0
 sops 3.8.0
 terraform 1.7.5
 terraform-docs 0.16.0
+terraform-lsp 0.0.12
 terragrunt 0.45.14
 tfupdate 0.7.2
 vault 1.15.2

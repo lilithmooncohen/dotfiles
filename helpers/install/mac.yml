@@ -1,6 +1,14 @@
 - hosts: localhost
   tasks:
+    # add taps
+    - name: add emacs-plus tap
+      community.general.homebrew_tap:
+        name: d12frosted/emacs-plus
     # install system tools
+    - name: install emacs
+      homebrew:
+        name: "emacs-plus"
+        state: present
     - name: install htop
       homebrew:
         name: "htop"
@@ -12,10 +20,6 @@
     - name: install watch
       homebrew:
         name: "watch"
-        state: present
-    - name: install fonts
-      homebrew:
-        name: "font-hack-nerd-font"
         state: present
     # tmux deps
     - name: install utf8proc
