@@ -1,6 +1,6 @@
 [user]
 name = Lily Cohen
-email = lilithmooncohen@gmail.com
+email = lilymooncohen@proton.me
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
 [url "ssh://git@gitlab.com/"]
