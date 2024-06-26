@@ -29,6 +29,7 @@ SNAP_HOME="${SNAP_HOME:=/snap}"
 SNAP_BIN="${SNAP_BIN:=$SNAP_HOME/bin}"
 HELMENV_BIN="${HELMENV_BIN:=$DOTFILES_PATH/src/github/yuya-takeyama/helmenv/bin}"
 TFENV_BIN="${TFENV_BIN:=$DOTFILES_PATH/src/github/tfutils/tfenv/bin}"
+KREW_BIN="${KREW_BIN:=$HOME/.krew/bin}"
 ASDF_DIR="${ASDF_DIR:=$DOTFILES_PATH/src/github/asdf-vm/asdf}"
 GIT_ROOT_DIR="${GIT_ROOT_DIR:=$HOME/git}"
 
@@ -72,5 +73,4 @@ fi
 if command -v gcloud >/dev/null 2>&1; then
     GCLOUD_PATH="$(asdf where gcloud)"
     GCLOUD_BIN="${GCLOUD_PATH}/bin"
-    echo $GCOULD_BIN
 fi

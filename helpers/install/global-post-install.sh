@@ -30,6 +30,7 @@ pip install \
 
 # krew plugins
 krew install \
+  cnpg \
   node-admin \
   pod-lens \
   sniff

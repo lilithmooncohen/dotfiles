@@ -17,6 +17,10 @@
       homebrew:
         name: "tmux"
         state: present
+    - name: install mosh
+      homebrew:
+        name: "mosh"
+        state: present
     - name: install watch
       homebrew:
         name: "watch"

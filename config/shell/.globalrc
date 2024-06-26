@@ -41,6 +41,9 @@ if [ -d "$TFENV_BIN" ]; then PATH="$TFENV_BIN:$PATH"; fi
 # set PATH so it includes gcloud's bin if it exists
 if [ -d "$GCLOUD_BIN" ]; then PATH="$GCLOUD_BIN:$PATH"; fi
 
+# set PATH so it includes krew's bin if it exists
+if [ -d "$KREW_BIN" ]; then PATH="$KREW_BIN:$PATH"; fi
+
 # Remove any potential duplicate entries in PATH
 PATH=$(echo -n $PATH | awk -v RS=: '!($0 in a) {a[$0]; printf("%s%s", length(a) > 1 ? ":" : "", $0)}')
 
