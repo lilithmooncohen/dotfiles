@@ -1,4 +1,5 @@
 argocd 2.11.3
+asdf-yamlfmt 0.11.0
 awscli 2.16.6
 crossplane-cli 1.9.2
 delta 0.17.0
@@ -43,4 +44,3 @@ vault 1.15.2
 velero 1.12.2
 vim 9.0.1568
 yq 4.44.1
-asdf-yamlfmt 0.11.0
