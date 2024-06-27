@@ -57,12 +57,12 @@
     #    dest: "/usr/local/bin/docker-compose"
     #    mode: 0755
 
-    - name: "Install powershell"
-      apt:
-        name: powershell
-        update_cache: "yes"
-        install_recommends: "yes"
-        state: "present"
+    # - name: "Install powershell"
+    #   apt:
+    #     name: powershell
+    #     update_cache: "yes"
+    #     install_recommends: "yes"
+    #     state: "present"
 
     - name: "Install erlang deps"
       apt:
