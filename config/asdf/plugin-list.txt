@@ -13,11 +13,11 @@ fzf                          ssh://git@github.com/kompiro/asdf-fzf.git
 gcloud                       ssh://git@github.com/jthegedus/asdf-gcloud
 github-cli                   ssh://git@github.com/bartlomiejdanek/asdf-github-cli.git
 golang                       ssh://git@github.com/kennyp/asdf-golang.git
-helm                         ssh://git@github.com/Antiarchitect/asdf-helm.git
 helm-diff                    ssh://git@github.com/dex4er/asdf-helm-diff.git
 helm-docs                    ssh://git@github.com/sudermanjr/asdf-helm-docs.git
 helm-git                     ssh://git@github.com/istreamlabs/asdf-helm-git.git
 helm-secrets                 ssh://git@github.com/istreamlabs/asdf-helm-secrets.git
+helm                         ssh://git@github.com/Antiarchitect/asdf-helm.git
 helmfile                     ssh://git@github.com/feniix/asdf-helmfile.git
 jq                           ssh://git@github.com/AZMCode/asdf-jq.git
 just                         ssh://git@github.com/olofvndrhr/asdf-just.git
@@ -32,6 +32,7 @@ mc                           ssh://git@github.com/penpyt/asdf-mc.git
 neovim                       ssh://git@github.com/richin13/asdf-neovim.git
 nodejs                       ssh://git@github.com/asdf-vm/asdf-nodejs.git
 pack                         ssh://git@github.com/johnlayton/asdf-buildpack.git
+pipx                         ssh://git@github.com/yozachar/asdf-pipx.git
 pluto                        ssh://git@github.com/FairwindsOps/asdf-pluto.git
 postgres                     ssh://git@github.com/smashedtoatoms/asdf-postgres.git
 pre-commit                   ssh://git@github.com/jonathanmorley/asdf-pre-commit.git
@@ -42,9 +43,9 @@ rust                         ssh://git@github.com/code-lever/asdf-rust.git
 shfmt                        ssh://git@github.com/luizm/asdf-shfmt.git
 sops                         ssh://git@github.com/feniix/asdf-sops.git
 stern                        ssh://git@github.com/looztra/asdf-stern.git
-terraform                    ssh://git@github.com/asdf-community/asdf-hashicorp.git
 terraform-docs               ssh://git@github.com/looztra/asdf-terraform-docs.git
 terraform-lsp                ssh://git@github.com/bartlomiejdanek/asdf-terraform-lsp.git
+terraform                    ssh://git@github.com/asdf-community/asdf-hashicorp.git
 terragrunt                   ssh://git@github.com/ohmer/asdf-terragrunt.git
 tfupdate                     ssh://git@github.com/yuokada/asdf-tfupdate.git
 vault                        ssh://git@github.com/asdf-community/asdf-hashicorp.git
