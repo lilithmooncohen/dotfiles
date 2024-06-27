@@ -2,7 +2,7 @@ argocd 2.11.3
 awscli 2.16.6
 crossplane-cli 1.9.2
 delta 0.17.0
-dyff 1.7.1
+# dyff 1.7.1
 elixir 1.16.1-otp-26
 erlang 26.2.2
 flux2 0.41.2
