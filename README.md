@@ -22,7 +22,7 @@ source ~/.profile
 
 ## Change default shell
 ```shell
-chsh -s /bin/zsh
+chsh -s $(which zsh)
 ```
 
 ## Install fonts
