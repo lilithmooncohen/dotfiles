@@ -13,6 +13,7 @@ golang 1.20.4
 helm 3.15.1
 helm-docs 1.11.0
 jq 1.6
+just 1.24.0
 k3d 5.5.1
 k9s 0.32.4
 kind 0.19.0
@@ -24,6 +25,7 @@ mc 2023-03-23T20-03-04Z
 neovim 0.10.0
 nodejs 20.5.1
 pack 0.29.0
+pipx 1.6.0
 pluto 5.16.3
 pre-commit 3.3.2
 python 3.11.3
