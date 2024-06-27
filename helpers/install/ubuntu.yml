@@ -34,12 +34,12 @@
         deb: "/tmp/ansible-downloads-packages-microsoft-prod.deb"
         state: "present"
 
-    - name: "Install powershell"
-      apt:
-        name: powershell
-        update_cache: "yes"
-        install_recommends: "yes"
-        state: "present"
+    # - name: "Install powershell"
+    #   apt:
+    #     name: powershell
+    #     update_cache: "yes"
+    #     install_recommends: "yes"
+    #     state: "present"
 
     #- name: "Add Docker apt key"
     #  apt_key:
@@ -56,13 +56,6 @@
     #    url: "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-Linux-x86_64"
     #    dest: "/usr/local/bin/docker-compose"
     #    mode: 0755
-
-    # - name: "Install powershell"
-    #   apt:
-    #     name: powershell
-    #     update_cache: "yes"
-    #     install_recommends: "yes"
-    #     state: "present"
 
     - name: "Install erlang deps"
       apt:
