@@ -25,6 +25,10 @@
       homebrew:
         name: "watch"
         state: present
+    - name: install cmake
+      homebrew:
+        name: "cmake"
+        state: present
     # tmux deps
     - name: install utf8proc
       homebrew:

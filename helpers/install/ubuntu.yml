@@ -9,6 +9,8 @@
           - tmux
           - zsh
           - emacs
+          - cmake
+          - gettext
         state: "present"
 
     - name: "Ensure locale exists"

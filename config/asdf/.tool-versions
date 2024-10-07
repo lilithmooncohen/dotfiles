@@ -23,14 +23,14 @@ kubectl 1.30.1
 kubectx 0.9.5
 kustomize 5.4.2
 mc 2023-03-23T20-03-04Z
-neovim 0.10.0
+neovim ref:v0.10.2
 nodejs 20.5.1
 pack 0.29.0
 pipx 1.6.0
 pluto 5.16.3
 pre-commit 3.3.2
 python 3.11.3
-redis 7.2.5
+# redis 7.2.5
 ruby 3.0.4
 rust 1.69.0
 shfmt 3.8.0
