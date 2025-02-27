@@ -6,7 +6,7 @@
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "src/github/SpaceVim/SpaceVim"]
 	path = src/github/SpaceVim/SpaceVim
-	url = https://gitlab.com/SpaceVim/SpaceVim.git
+	url = https://github.com/wsdjeg/SpaceVim.git
 [submodule "src/github/Shougo/dein.vim"]
 	path = src/github/Shougo/dein.vim
 	url = https://github.com/Shougo/dein.vim.git

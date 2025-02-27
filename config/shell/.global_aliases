@@ -21,3 +21,4 @@ alias pip="${HOME}/.asdf/shims/pip"
 alias python3="${HOME}/.asdf/shims/python"
 alias pip3="${HOME}/.asdf/shims/pip"
 alias code-tunnel="code tunnel --accept-server-license-terms"
+alias reauth='ssh-add --apple-use-keychain ~/.ssh/id_rsa; gcloud auth login; gcloud auth application-default login; gcloud auth application-default set-quota-project qordoba-devel; aws sso login --profile writer-iam-sre-team-role; aws sso login --profile writer-iam-platform-team-role'
