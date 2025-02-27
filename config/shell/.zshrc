@@ -11,6 +11,11 @@ if [ -f "$DOTFILES_SHELL_DIR/.zsh_aliases" ]; then . "$DOTFILES_SHELL_DIR/.zsh_a
 # global rc
 if [ -f "$DOTFILES_SHELL_DIR/.globalrc" ]; then . "$DOTFILES_SHELL_DIR/.globalrc"; fi
 
+# Ghostty shell integration for ZSH.
+if [ -n "${GHOSTTY_RESOURCES_DIR}" ]; then
+    builtin source "${GHOSTTY_RESOURCES_DIR}/shell-integration/zsh/ghostty-integration"
+fi
+
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="refined"
@@ -36,4 +41,3 @@ if [ -d "${ASDF_DIR}" ]; then
 fi
 
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
-

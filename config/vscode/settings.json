@@ -25,7 +25,7 @@
     "editor.fontSize": 14,
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": true,
-    "workbench.colorTheme": "Dracula",
+    "workbench.colorTheme": "Dracula Theme",
     "workbench.colorCustomizations": {
         "terminal.background":"#282936",
         "terminal.foreground":"#E9E9F4",

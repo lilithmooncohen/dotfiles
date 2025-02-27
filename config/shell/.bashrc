@@ -11,6 +11,11 @@ if [ -f "$DOTFILES_SHELL_DIR/.bash_aliases" ]; then . "$DOTFILES_SHELL_DIR/.bash
 # global rc
 if [ -f "$DOTFILES_SHELL_DIR/.globalrc" ]; then . "$DOTFILES_SHELL_DIR/.globalrc"; fi
 
+# Ghostty shell integration for Bash.
+if [ -n "${GHOSTTY_RESOURCES_DIR}" ]; then
+    builtin source "${GHOSTTY_RESOURCES_DIR}/shell-integration/bash/ghostty.bash"
+fi
+
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 

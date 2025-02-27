@@ -11,9 +11,9 @@ fzf 0.37.0
 gcloud 479.0.0
 github-cli 2.50.0
 golang 1.20.4
-helm 3.15.1
+helm 3.16.3
 helm-docs 1.11.0
-# jq 1.6
+jq 1.6
 just 1.24.0
 k3d 5.5.1
 k9s 0.32.4
@@ -30,7 +30,7 @@ pipx 1.6.0
 pluto 5.16.3
 pre-commit 3.3.2
 python 3.11.3
-# redis 7.2.5
+redis 7.4.1
 ruby 3.0.4
 rust 1.69.0
 shfmt 3.8.0
@@ -44,3 +44,7 @@ vault 1.15.2
 velero 1.12.2
 vim 9.0.1568
 yq 4.44.1
+cloudflared 2024.6.1
+replicated 0.80.0
+pachctl 2.11.5
+doctl 1.121.0
