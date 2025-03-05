@@ -48,3 +48,4 @@ cloudflared 2024.6.1
 replicated 0.80.0
 pachctl 2.11.5
 doctl 1.121.0
+kn 1.17.0

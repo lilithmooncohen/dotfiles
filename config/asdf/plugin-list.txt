@@ -24,6 +24,7 @@ just                         ssh://git@github.com/olofvndrhr/asdf-just.git
 k3d                          ssh://git@github.com/spencergilbert/asdf-k3d.git
 k9s                          ssh://git@github.com/looztra/asdf-k9s.git
 kind                         ssh://git@github.com/johnlayton/asdf-kind.git
+kn                           ssh://git@github.com/joke/asdf-kn.git
 krew                         ssh://git@github.com/bjw-s/asdf-krew.git
 kubectl                      ssh://git@github.com/asdf-community/asdf-kubectl.git
 kubectx                      ssh://git@gitlab.com/wt0f/asdf-kubectx.git
