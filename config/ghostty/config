@@ -49,7 +49,7 @@
 # resize-overlay-duration = 4s 200ms
 
 #theme 				= Dracula
-theme              = catppuccin-mocha.conf
+theme = dark:catppuccin-mocha,light:catppuccin-latte
 #font-family                    	= "FuraCode Nerd Font"
 #font-family-bold               	= "FuraCode Nerd Font"
 #font-family-italic             	= "FuraCode Nerd Font"
