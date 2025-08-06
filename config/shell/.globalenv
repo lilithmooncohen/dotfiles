@@ -20,6 +20,7 @@ AWS_PAGER=""
 
 HOSTNAME="${HOSTNAME:=$(hostname)}"
 DOTFILES_BIN="${DOTFILES_BIN:=$DOTFILES_PATH/src/local/bin}"
+CARGO_HOME="${CARGO_HOME:=$HOME/.cargo}"
 RUSTUP_HOME="${RUSTUP_HOME:=$HOME/.cargo}"
 YARN_HOME="${YARN_HOME:=$HOME/.yarn}"
 YARN_BIN="${YARN_BIN:=$YARN_HOME/bin}"
@@ -65,9 +66,10 @@ if [ -f "${HOME}/.asdf/shims/python" ] 2>&1; then
     PYTHON3_BIN="${PYTHON3_BIN:=$PYTHON3_HOME/bin}"
 fi
 
-if command -v cargo >/dev/null 2>&1; then
-    CARGO_VERSION="$(cargo --version | awk '{print $2}')"
-    CARGO_HOME="${CARGO_HOME:=$HOME/.asdf/installs/rust/$CARGO_VERSION}"
+if command -v asdf >/dev/null 2>&1 && asdf current rust >/dev/null 2>&1; then
+    ASDF_RUST_VERSION="$(asdf current rust | awk '{print $2}')"
+    CARGO_BIN="${CARGO_BIN:=$HOME/.asdf/installs/rust/$ASDF_RUST_VERSION}/bin"
+else
     CARGO_BIN="${CARGO_BIN:=$CARGO_HOME/bin}"
 fi
 
