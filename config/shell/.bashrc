@@ -83,3 +83,11 @@ esac
 if [ -d "${ASDF_DIR}" ]; then . $ASDF_DIR/completions/asdf.bash; fi
 
 if [ -f "$HOME/google-cloud-sdk/completion.bash.inc" ]; then . "$HOME/google-cloud-sdk/completion.bash.inc"; fi
+
+# always last
+if [[ ":$PATH:" != *":$ASDF_SHIMS:"* ]]; then
+    export PATH="$ASDF_SHIMS:$PATH"
+else
+    # Remove all occurrences and prepend once
+    export PATH="$ASDF_SHIMS:$(echo "$PATH" | awk -v RS=: -v ORS=: -v p="$ASDF_SHIMS" '$0 != p' | sed 's/:$//')"
+fi

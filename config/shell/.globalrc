@@ -12,7 +12,7 @@ if [ -d "$HOME/bin" ]; then PATH="$HOME/bin:$PATH"; fi
 if [ -d "$HOME/.local/bin" ]; then PATH="$HOME/.local/bin:$PATH"; fi
 
 # set PATH so it includes cargo's bin if it exists
-if [ -d "$CARGO_BIN" ]; then PATH="$PATH:$CARGO_BIN"; fi
+if [ -d "$CARGO_BIN" ]; then PATH="$CARGO_BIN:$PATH"; fi
 
 # set PATH so it includes go's bin if it exists
 if [ -d "$GOBIN" ]; then PATH="$GOBIN:$PATH"; fi
