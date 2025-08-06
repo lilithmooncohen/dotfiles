@@ -20,8 +20,6 @@ AWS_PAGER=""
 
 HOSTNAME="${HOSTNAME:=$(hostname)}"
 DOTFILES_BIN="${DOTFILES_BIN:=$DOTFILES_PATH/src/local/bin}"
-CARGO_HOME="${CARGO_HOME:=$HOME/.cargo}"
-RUSTUP_HOME="${RUSTUP_HOME:=$HOME/.cargo}"
 YARN_HOME="${YARN_HOME:=$HOME/.yarn}"
 YARN_BIN="${YARN_BIN:=$YARN_HOME/bin}"
 RVM_HOME="${RVM_HOME:=$HOME/.rvm}"
@@ -68,8 +66,11 @@ fi
 
 if command -v asdf >/dev/null 2>&1 && asdf current rust >/dev/null 2>&1; then
     ASDF_RUST_VERSION="$(asdf current rust | awk '{print $2}')"
-    CARGO_BIN="${CARGO_BIN:=$HOME/.asdf/installs/rust/$ASDF_RUST_VERSION}/bin"
+    CARGO_HOME="${CARGO_HOME:=$HOME/.asdf/installs/rust/$ASDF_RUST_VERSION}"
+    CARGO_BIN="${CARGO_BIN:=$CARGO_HOME/bin}"
 else
+    CARGO_HOME="${CARGO_HOME:=$HOME/.cargo}"
+    RUSTUP_HOME="${RUSTUP_HOME:=$CARGO_HOME}"
     CARGO_BIN="${CARGO_BIN:=$CARGO_HOME/bin}"
 fi
 
